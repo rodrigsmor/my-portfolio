@@ -66,3 +66,11 @@ export const HomeSection = styled.main`
   backdrop-filter: blur(180px);
   background: ${({ theme }) => theme.colors.background.main }80; 
 `;
+
+export const PageContentWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center.
+`;

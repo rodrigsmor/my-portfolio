@@ -1,5 +1,6 @@
+import { NavigateButton } from "../../components/Buttons/NavigateButton"
 import { Header } from "../../components/layouts/Header"
-import { HomeSection, PageContainer } from "./styled"
+import { HomeSection, PageContainer, PageContentWrapper } from "./styled"
 
 export const Home = () => {
   return (
@@ -7,6 +8,10 @@ export const Home = () => {
       <div></div>
       <HomeSection>
         <Header />
+        <PageContentWrapper>
+          <NavigateButton isPrevious />
+          <NavigateButton />
+        </PageContentWrapper>
       </HomeSection>
     </PageContainer>
   )
