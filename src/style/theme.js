@@ -21,8 +21,8 @@ export const theme = {
   },
   typography: {
     type: {
-      main: '',
-      logo: ''
+      main: `'Outfit', sans-serif`,
+      logo: `'Turret Road', cursive`
     },
     size: {
       h6: '14px',
@@ -33,7 +33,12 @@ export const theme = {
       h1: '48px'
     },
     weight: {
-
+      light: '300',
+      regular: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      extrabold: '800'
     }
   },
   shadow: {
