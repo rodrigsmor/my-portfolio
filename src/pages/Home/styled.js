@@ -8,7 +8,7 @@ export const PageContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  > div {
+  > .background-support {
     z-index: 1;
     width: 100vw;
     height: 100vh;
@@ -35,7 +35,7 @@ export const PageContainer = styled.div`
   }
 
   &:after,&:before,
-  > div:after, > div:before {
+  > .background-support:after, > .background-support:before {
     z-index: 1;
     content: '';
     display: block;
@@ -59,7 +59,7 @@ export const PageContainer = styled.div`
   }
 `;
 
-export const HomeSection = styled.main`
+export const HomeSectionWrapper = styled.div`
   z-index: 2;
   width: 100vw;
   height: 100vh;
@@ -73,4 +73,26 @@ export const PageContentWrapper = styled.div`
   display: flex;
   position: relative;
   align-items: center.
+`;
+
+export const CurrentPageContentContainer = styled.main`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
+
+  > section:nth-of-type(3) {
+    background: blueviolet;
+  }
+
+  > section:nth-of-type(4) {
+    background: gray;
+  }
+
+  > * {
+    min-width: 100vw;
+    height: 100vh;
+  }
 `;

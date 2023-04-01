@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const NavigateButtonWrapper = styled.button`
+  z-index: 20;
   width: 98px;
   height: 98px;
   display: flex;

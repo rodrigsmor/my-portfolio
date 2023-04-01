@@ -1,7 +1,7 @@
-import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from "react-icons/hi"
-import { NavigateButtonWrapper } from "./styled"
 import { IconContext } from "react-icons"
-import { redirect, useLocation, useNavigate } from "react-router-dom"
+import { NavigateButtonWrapper } from "./styled"
+import { useLocation, useNavigate } from "react-router-dom"
+import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from "react-icons/hi"
 
 export const NavigateButton = ({ isPrevious = false }) => {
   const navigate = useNavigate();
