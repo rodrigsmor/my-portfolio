@@ -57,7 +57,7 @@ export const ProgressDetailed = styled.div`
     font-weight: ${({ theme }) => theme.typography.weight.medium };
   }
 
-  > div {
+  > .progress-background {
     height: 4px;
     width: 100%;
     overflow: hidden;
@@ -65,9 +65,9 @@ export const ProgressDetailed = styled.div`
     border-radius: 4px;
     background: ${({ theme }) => theme.colors.typography.main }1A;
 
-    &:after {
+    > div {
       content: '';
-      width: 50%;
+      width: ${({ progressValue }) => progressValue};
       height: 4px;
       border-radius: 4px;
       position: absolute;
