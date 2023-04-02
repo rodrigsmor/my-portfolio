@@ -6,6 +6,7 @@ import { HomeSection } from "../../components/screens/HomeSection"
 import { NavigateButton } from "../../components/Buttons/NavigateButton"
 import { CurrentPageContentContainer, PageContainer, PageContentWrapper, HomeSectionWrapper } from "./styled"
 import { ContactSection } from "../../components/screens/ContactSection"
+import { AboutMeSection } from "../../components/screens/AboutMeSection"
 
 export const Home = () => {
   const { pathname } = useLocation();
@@ -28,7 +29,7 @@ export const Home = () => {
           <NavigateButton />
           <CurrentPageContentContainer ref={pageContainerRef}>
             <HomeSection />
-            <section id="about-me"></section>
+            <AboutMeSection />
             <section id="project"></section>
             <ContactSection />
           </CurrentPageContentContainer>
