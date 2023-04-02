@@ -89,10 +89,6 @@ export const CurrentPageContentContainer = styled.main`
     background: blueviolet;
   }
 
-  > section:nth-of-type(4) {
-    background: gray;
-  }
-
   > * {
     min-width: 100vw;
     height: 100dvh;
