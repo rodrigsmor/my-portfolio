@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const FooterContainer = styled.footer`
   right: 0;
   bottom: 0;
+  z-index: 50;
   width: 100vw;
   height: 68px;
   display: flex;
@@ -20,8 +21,9 @@ export const SocialMedias = styled.ul`
   align-items: center;
 
   > li {
-    transition: all .5s ease-out;
     opacity: 1;
+    cursor: pointer;
+    transition: all .5s ease-out;
 
     &:hover {
       opacity: 0.4;
