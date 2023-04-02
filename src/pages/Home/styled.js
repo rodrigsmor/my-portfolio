@@ -85,16 +85,8 @@ export const CurrentPageContentContainer = styled.main`
   max-width: 100vw;
   max-height: 100dvh;
 
-  > section:nth-of-type(3) {
-    background: blueviolet;
-  }
-
-  > section:nth-of-type(4) {
-    background: gray;
-  }
-
   > * {
-    min-width: 100vw;
+    min-width: 100dvw;
     height: 100dvh;
   }
 `;

@@ -8,7 +8,7 @@ export const HomeSection = () => {
   const { pathname } = useLocation();
 
   return (
-    <HomeSectionContainer id='home' className={`${pathname !== '/' && 'not-active'}`} onClick={e => setIsActive(!isActive) }>
+    <HomeSectionContainer id='home' className={`${pathname !== '/' && 'not-active'}`}>
       <GreetingsText>
         <p>Boas vindas ao meu <strong> portfólio</strong>!</p>
       </GreetingsText>
