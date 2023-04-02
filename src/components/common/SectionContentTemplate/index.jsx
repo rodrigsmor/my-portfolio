@@ -11,13 +11,13 @@ export const SectionContentTemplate = ({ children, sectionName }) => {
   const contentScrollRef = useRef(null);
   const [showModal, setShowModal] = useContext(ModalContext);
 
-  function updateProgressPercentager(element) {
+  function updateProgressPercentage(element) {
     setShowModal({ ...showModal, progress: calculatePercentage(element.scrollHeight, element.scrollTop + element.offsetHeight) })
   }
 
   useEffect(() => {
     if(showModal.is_opened && showModal.type_modal === sectionName)
-      updateProgressPercentager(contentScrollRef.current)
+      updateProgressPercentage(contentScrollRef.current)
   }, [ showModal.is_opened ])
 
   useEffect(() => {
@@ -27,15 +27,13 @@ export const SectionContentTemplate = ({ children, sectionName }) => {
 
   return (
     <SectionContentTemplateWrapper className={`${(showModal.is_opened && showModal.type_modal === sectionName) && 'opened'}`}>
-      <BackButton onClick={e => setShowModal({ is_opened: false, type_modal: '', progress: '0%' })}>
+      <BackButton onClick={e => setShowModal(modalContextInitialState)}>
         <IoReturnUpBackOutline size={18} /> voltar
       </BackButton>
       <div 
         ref={contentScrollRef}
         className='content-wrapper'
-        onScroll={e => {
-          updateProgressPercentager(e.target)
-        }}
+        onScroll={e => updateProgressPercentage(e.target)}
       >
         { children }
       </div>

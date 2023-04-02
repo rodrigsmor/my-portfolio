@@ -169,7 +169,7 @@ export const InterestingsSection = styled.section`
       flex-direction: row;
       justify-content: center;
       max-width: calc((100% - (18px * 2)) / 3);
-      border: 2px solid rgba(219, 211, 240, 0.1);
+      border: 2px solid ${({ theme }) => theme.colors.typography.main}1A;
       color: ${({ theme }) => theme.colors.typography.main };
       background: ${({ theme }) => theme.colors.surface.dark };
 
