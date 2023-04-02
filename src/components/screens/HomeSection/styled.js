@@ -93,6 +93,7 @@ export const SectionTitle = styled.hgroup`
     > h1 {
       font-size: 86px;
       line-height: 108px;
+      min-width: fit-content;
     }
 
     &:after {
