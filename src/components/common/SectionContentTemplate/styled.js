@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SectionContentTemplateWrapper = styled.div`
   z-index: 20;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   bottom: -150%;
   max-width: 100vw;
   overflow: hidden;
@@ -17,7 +17,7 @@ export const SectionContentTemplateWrapper = styled.div`
   
   > div.content-wrapper {
     width: 100%;
-    max-height: 100vh;
+    max-height: 100dvh;
     overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-width: none;
@@ -33,7 +33,7 @@ export const SectionContentTemplateWrapper = styled.div`
 export const BackButton = styled.button`
   gap: 10px;
   top: 80px;
-  left: 40px;
+  left: 16px;
   display: flex;
   cursor: pointer;
   position: absolute !important;
@@ -43,4 +43,8 @@ export const BackButton = styled.button`
   font-size: ${({ theme }) => theme.typography.size.h5 };
   color: ${({ theme }) => theme.colors.typography.main };
   font-weight: ${({ theme }) => theme.typography.weight.medium };
+
+  @media ${({ theme }) => theme.media.desktop } {
+    left: 40px;
+  }
 `;

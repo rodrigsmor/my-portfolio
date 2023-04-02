@@ -9,10 +9,22 @@ export const HeaderContainer = styled.header`
   height: 60px;
   display: flex;
   position: fixed;
-  padding: 0 0 0 80px;
+  padding: 0 0 0 20px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid ${({ theme }) => theme.colors.typography.main }1A;
+
+  > figure > figcaption {
+    display: none;
+  }
+
+  @media ${({ theme }) => theme.media.desktop } {
+    padding: 0 0 0 80px;
+
+    > figure > figcaption {
+      display: block;
+    }
+  }
 `;
 
 export const NavigationHeader = styled.nav`
@@ -25,7 +37,7 @@ export const NavigationHeader = styled.nav`
 export const NavigationPageOptions = styled.ul`
   gap: 14px;
   height: 100%;
-  display: flex;
+  display: none;
   list-style: none;
   position: relative;
   align-items: center;
@@ -60,6 +72,10 @@ export const NavigationPageOptions = styled.ul`
 
   &.contacts:after {
     left: 318px;
+  }
+
+  @media ${({ theme }) => theme.media.desktop } {
+    display: flex;
   }
 `;
 

@@ -36,11 +36,11 @@ export const SeeMoreButtonContainer = styled.button`
   height: 76px;
   gap: 10px;
   z-index: 51;
-  bottom: 24px;
+  bottom: 38px;
   display: flex;
   cursor: pointer;
   width: max-content;
-  position: absolute;
+  position: absolute !important;
   align-items: center;
   background: transparent;
   flex-direction: column;
@@ -99,5 +99,9 @@ export const SeeMoreButtonContainer = styled.button`
         border: 2px solid ${({ theme }) => theme.colors.typography.main};
       }
     }
+  }
+
+  @media ${({ theme }) => theme.media.desktop } {
+    bottom: 24px;
   }
 `;

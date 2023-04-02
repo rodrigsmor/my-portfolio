@@ -57,7 +57,6 @@ export const Footer = () => {
             <li key={name}>
               <Link to={link}>
                 <IconContext.Provider value={{
-                  size: 20,
                   color: theme.colors.typography.main,
                 }}>
                   { Icon }
