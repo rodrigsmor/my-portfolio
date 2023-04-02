@@ -1,8 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { HomeSectionContent } from "../HomeSectionContent";
+import { SeeMoreButton } from "../../Buttons/SeeMoreButton";
 import { SectionContentTemplate } from "../../common/SectionContentTemplate";
 import { GreetingsText, HomeSectionContainer, SectionTitle, Subtitle } from "./styled";
-import { SeeMoreButton } from "../../Buttons/SeeMoreButton";
 
 export const HomeSection = () => {
   const { pathname } = useLocation();

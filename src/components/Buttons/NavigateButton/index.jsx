@@ -14,6 +14,8 @@ export const NavigateButton = ({ isPrevious = false }) => {
     <NavigateButtonWrapper 
       className={`${isPrevious ? 'previous' : 'next'}`} 
       disabled={isDisabled}
+      title={`go to ${isPrevious ? 'previous' : 'next'} page`}
+      aria-label={`go to ${isPrevious ? 'previous' : 'next'} page`}
       onClick={e => {
         let redirectTo = paths.indexOf(pathname) + (isPrevious ? -1 : +1);
         navigate(paths.at(redirectTo))

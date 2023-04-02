@@ -3,7 +3,7 @@ import BackgroundImage from '../../../assets/images/images/bg-home.jpg'
 
 export const HomeSectionContentContainer = styled.div`
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100dvh;
   height: fit-content;
   background: linear-gradient(0deg, rgba(43, 29, 82, 0.9), rgba(43, 29, 82, 0.9)), url(${BackgroundImage});
   background-repeat: repeat;
@@ -14,13 +14,13 @@ export const HomeSectionContentContainer = styled.div`
 export const PresentationSection = styled.section`
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   align-items: center;
-  padding: 12.8vh 11.7vw;
+  padding: 120px 16px;
   flex-direction: column;
 
   > h3 {
-    gap: 18px;
+    gap: 14px;
     display: flex;
     align-items: center;
     font-size: ${({ theme }) => theme.typography.size.h3 };
@@ -32,7 +32,7 @@ export const PresentationSection = styled.section`
     text-fill-color: transparent;
 
     &:after,&:before {
-      width: 92px;
+      width: 8vw;
       height: 2px;
       min-height: 2px;
       content: '';
@@ -45,7 +45,7 @@ export const PresentationSection = styled.section`
 
   > p {
     text-align: center;
-    margin: 12px 98px 48px;
+    margin: 12px 0 48px;
     color: ${({ theme }) => theme.colors.typography.main };
     font-size: ${({ theme }) => theme.typography.size.h5 };
     font-weight: ${({ theme }) => theme.typography.weight.light };
@@ -57,21 +57,37 @@ export const PresentationSection = styled.section`
     opacity: 0.4;
     background: ${({ theme }) => theme.colors.typography.main };
   }
+
+  @media ${({ theme }) => theme.media.desktop } {
+    padding: 12.8vh 11.7vw;
+
+    > h3 {
+      gap: 18px;
+      &:after,&:before {
+        width: 92px;
+      }
+    }
+
+    > p {
+      margin: 12px 98px 48px;
+    }
+  }
 `;
 
 export const WhoIAmSection = styled.section`
-  gap: 48px;
+  gap: 58px;
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   align-items: center;
-  padding: 12.8vh 11.7vw;
+  padding: 220px 16px;
+  flex-direction: column;
   justify-content: center;
 
   > figure {
     > img {
       height: auto;
-      width: 288px;
+      width: 248px;
     }
   }
 
@@ -114,15 +130,32 @@ export const WhoIAmSection = styled.section`
       font-weight: ${({ theme }) => theme.typography.weight.light };
     }
   }
+
+  @media ${({ theme }) => theme.media.tablet } {
+    gap: 48px;
+    height: 100dvh;
+    padding: 120px 42px;
+    flex-direction: row;
+
+    > figure > img {
+      height: auto;
+      width: 288px;
+    }
+  }
+
+  @media ${({ theme }) => theme.media.desktop } {
+    height: 100vh;
+    padding: 12.8vh 11.7vw;
+  }
 `;
 
 export const InterestingsSection = styled.section`
   gap: 36px;
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   align-items: center;
-  padding: 12.8vh 11.7vw;
+  padding: 40px 16px 120px;
   justify-content: center;
   flex-direction: column;
 
@@ -162,13 +195,12 @@ export const InterestingsSection = styled.section`
       display: flex;
       padding: 14px;
       flex-shrink: 0;
-      min-width: 336px;
+      max-width: 100%;
       height: fit-content;
       align-items: center;
       border-radius: 16px;
       flex-direction: row;
       justify-content: center;
-      max-width: calc((100% - (18px * 2)) / 3);
       border: 2px solid ${({ theme }) => theme.colors.typography.main}1A;
       color: ${({ theme }) => theme.colors.typography.main };
       background: ${({ theme }) => theme.colors.surface.dark };
@@ -188,6 +220,18 @@ export const InterestingsSection = styled.section`
           font-weight: ${({ theme }) => theme.typography.weight.regular};
           color: ${({ theme }) => theme.colors.typography.main}99;
         }
+      }
+    }
+  }
+
+  @media ${({ theme }) => theme.media.desktop } {
+    height: 100vh;
+    padding: 12.8vh 11.7vw;
+    
+    > ul {
+      > li {
+        min-width: 336px;
+        max-width: calc((100% - (18px * 2)) / 3);
       }
     }
   }
