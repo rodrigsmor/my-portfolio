@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const HomeSectionContainer = styled.section`
   width: 100vw;
   display: flex;
-  height: 100vh;
-  padding: 0 16vw;
+  height: 100dvh;
+  padding: 0 16px;
   overflow: hidden;
   min-width: 100vw;
   max-width: 100vw;
@@ -38,6 +38,10 @@ export const HomeSectionContainer = styled.section`
     position: static;
     transition: all .5s ease-out;
   }
+
+  @media ${({ theme }) => theme.media.desktop } {
+    padding: 0 16vw;
+  }
 `;
 
 export const SectionTitle = styled.hgroup`
@@ -49,8 +53,11 @@ export const SectionTitle = styled.hgroup`
   
   > h1 {
     z-index: 5;
-    font-size: 86px;
+    font-size: 74px;
+    max-width: 100%;
     margin: 0 0 12px;
+    line-height: 80px;
+    text-align: center;
     font-weight: ${({ theme }) => theme.typography.weight.extrabold };
   }
 
@@ -69,28 +76,53 @@ export const SectionTitle = styled.hgroup`
 
   &:before {
     top: 53.5px;
-    width: 368px;
     height: 42px;
-    left: -108.5px;
+    width: 48vw;
+    left: 0vw;
   }
 
   &:after {
     content: '';
     height: 9px;
     width: 201px;
-    bottom: 13px;
-    right: -146px;
+    bottom: 0px;
+    right: 0px;
+  }
+  
+  @media ${({ theme }) => theme.media.desktop } {
+    > h1 {
+      font-size: 86px;
+      line-height: 108px;
+    }
+
+    &:after {
+      bottom: 13px;
+      right: -146px;
+    }
+  }
+
+  @media ${({ theme }) => theme.media.tablet } {
+    &:before {
+      width: 368px;
+      left: -108.5px;
+    }
   }
 `;
 
 export const Subtitle = styled.h2`
   opacity: 0.8;
-  text-align: end;
-  margin: 0 -476px 0 0;
-  min-width: max-content;
+  text-align: center;
+  margin: 12px 0 0 0;
+  max-width: 100%;
   font-size: ${({ theme }) => theme.typography.size.h4 };
   color: ${({ theme }) => theme.colors.typography.main };
   font-weight: ${({ theme }) => theme.typography.weight.regular};
+  
+  @media ${({ theme }) => theme.media.desktop } {
+    text-align: end;
+    margin: 0 -476px 0 0;
+    min-width: max-content;
+  }
 `;
 
 export const GreetingsText = styled.div`
@@ -102,14 +134,15 @@ export const GreetingsText = styled.div`
   &:before {
     content: '';
     height: 3px;
-    width: 5vw;
+    width: 15vw;
+    max-width: 100px;
     border-radius: 2px;
     background: linear-gradient(
       180deg,
       ${({ theme }) => theme.colors.secondary.main} 0%,
       ${({ theme }) => theme.colors.primary.main } 100%
     );
-    margin: 0 18px 0 0;
+    margin: 0 8px 0 0;
   }
 
   > p {
@@ -127,6 +160,14 @@ export const GreetingsText = styled.div`
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+    }
+  }
+
+  @media ${({ theme }) => theme.media.desktop } {
+    &:before {
+      width: 5vw;
+      max-width: 5vw;
+      margin: 0 18px 0 0;;
     }
   }
 `;

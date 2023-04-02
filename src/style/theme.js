@@ -41,6 +41,11 @@ export const theme = {
       extrabold: '800'
     }
   },
+  media: {
+    mobile: '(min-width: 320px)',
+    tablet: '(min-width: 768px)',
+    desktop: '(min-width: 1024px)'
+  },
   shadow: {
 
   }

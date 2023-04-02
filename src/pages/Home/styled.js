@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const PageContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
+  overflow: hidden;
+  max-height: 100dvh;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -11,7 +13,7 @@ export const PageContainer = styled.div`
   > .background-support {
     z-index: 1;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     position: absolute;
 
     &:after {
@@ -62,7 +64,7 @@ export const PageContainer = styled.div`
 export const HomeSectionWrapper = styled.div`
   z-index: 2;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   backdrop-filter: blur(180px);
   background: ${({ theme }) => theme.colors.background.main }80; 
 `;
@@ -77,11 +79,11 @@ export const PageContentWrapper = styled.div`
 
 export const CurrentPageContentContainer = styled.main`
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   overflow: hidden;
   max-width: 100vw;
-  max-height: 100vh;
+  max-height: 100dvh;
 
   > section:nth-of-type(3) {
     background: blueviolet;
@@ -93,6 +95,6 @@ export const CurrentPageContentContainer = styled.main`
 
   > * {
     min-width: 100vw;
-    height: 100vh;
+    height: 100dvh;
   }
 `;

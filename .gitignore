@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 .env
 yarn.lock
+
+vite.config.js.*
