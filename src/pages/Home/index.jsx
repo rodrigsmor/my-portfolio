@@ -11,7 +11,6 @@ export const Home = () => {
   const pageContainerRef = useRef();
 
   useEffect(() => {
-    console.log(pageContainerRef.current)
     pageContainerRef.current?.childNodes.forEach((element) => {
       if ((pathname === '/' && element?.id === 'home') || pathname.includes(element?.id))
         element.scrollIntoView({ behavior: "smooth", block: "start"});
