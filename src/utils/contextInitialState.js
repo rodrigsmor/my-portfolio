@@ -1,5 +1,5 @@
 export const modalContextInitialState = {
   is_opened: false,
   type_modal: '',
-  progress: '0%'
+  progress: '1%'
 }
