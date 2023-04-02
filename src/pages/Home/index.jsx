@@ -5,6 +5,7 @@ import { Footer } from "../../components/layouts/Footer"
 import { HomeSection } from "../../components/screens/HomeSection"
 import { NavigateButton } from "../../components/Buttons/NavigateButton"
 import { CurrentPageContentContainer, PageContainer, PageContentWrapper, HomeSectionWrapper } from "./styled"
+import { ContactSection } from "../../components/screens/ContactSection"
 
 export const Home = () => {
   const { pathname } = useLocation();
@@ -29,7 +30,7 @@ export const Home = () => {
             <HomeSection />
             <section id="about-me"></section>
             <section id="project"></section>
-            <section id="contacts"></section>
+            <ContactSection />
           </CurrentPageContentContainer>
         </PageContentWrapper>
         <Footer />
