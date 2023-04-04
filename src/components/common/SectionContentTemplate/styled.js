@@ -1,4 +1,29 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const ModalOpeningAnimation = keyframes`
+  0% {
+    height: 0px;
+  }
+  8% {
+    height: 100dvh;
+  }
+  100% {
+    height: 0px;
+  }
+`;
+
+const ModalClosingAnimation = keyframes`
+  0% {
+    height: 0px;
+  }
+  80% {
+    height: 100dvh;
+  }
+  100% {
+    height: 0px;
+  }
+`;
+
 
 export const SectionContentTemplateWrapper = styled.div`
   z-index: 20;
@@ -13,9 +38,40 @@ export const SectionContentTemplateWrapper = styled.div`
   
   &.opened {
     bottom: 0;
+
+    > div.content-wrapper {
+      &:before {
+        animation: ${ModalOpeningAnimation} .9s cubic-bezier(0.76, 0, 0.24, 1) !important;
+      }
+    }
+  }
+
+  &:not(.opened) {
+    transition-delay: .6s;
+    &:before {
+      content: '';
+      width: 100dvw;
+      height: 0dvh;
+      display: block;
+      flex: 1;
+      background: ${({ theme }) => theme.colors.background.main};
+      animation: ${ModalClosingAnimation} .9s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    > div.content-wrapper {
+    }
   }
   
   > div.content-wrapper {
+    &:before, &:after {
+      content: '';
+      width: 100dvw;
+      height: 0dvh;
+      display: block;
+      flex: 1;
+      background: ${({ theme }) => theme.colors.background.main};
+    }
+    
     width: 100%;
     max-height: 100dvh;
     overflow-y: scroll;
