@@ -4,6 +4,8 @@ export const AboutMeSectionContainer = styled.section`
   gap: 18px;
   width: 100dvw;
   height: 100dvh;
+  max-width: 100dvw;
+  overflow: hidden;
   display: flex;
   padding: 0 16px;
   align-items: center;
