@@ -26,7 +26,7 @@ export const SectionContentTemplate = ({ children, sectionName }) => {
   }, [ pathname ])
 
   return (
-    <SectionContentTemplateWrapper className={`${(showModal.is_opened && showModal.type_modal === sectionName) && 'opened'}`}>
+    <SectionContentTemplateWrapper className={`${(showModal.is_opened && showModal.type_modal === sectionName) ? 'opened' : 'close'}`}>
       <BackButton onClick={e => setShowModal(modalContextInitialState)}>
         <IoReturnUpBackOutline size={18} /> voltar
       </BackButton>
