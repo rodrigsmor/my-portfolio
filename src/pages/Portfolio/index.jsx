@@ -7,8 +7,9 @@ import { NavigateButton } from "../../components/Buttons/NavigateButton"
 import { CurrentPageContentContainer, PageContainer, PageContentWrapper, HomeSectionWrapper } from "./styled"
 import { ContactSection } from "../../components/screens/ContactSection"
 import { AboutMeSection } from "../../components/screens/AboutMeSection"
+import { Projects } from "../../components/screens/Projects"
 
-export const Home = () => {
+export const Portfolio = () => {
   const { pathname } = useLocation();
   const pageContainerRef = useRef();
 
@@ -30,7 +31,7 @@ export const Home = () => {
           <CurrentPageContentContainer ref={pageContainerRef}>
             <HomeSection />
             <AboutMeSection />
-            <section id="project"></section>
+            <Projects />
             <ContactSection />
           </CurrentPageContentContainer>
         </PageContentWrapper>
