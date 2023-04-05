@@ -4,7 +4,7 @@ const ModalOpeningAnimation = keyframes`
   0% {
     height: 0px;
   }
-  8% {
+  10% {
     height: 100dvh;
   }
   100% {
