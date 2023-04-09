@@ -10,25 +10,27 @@ export const ProjectCard = ({ values }) => {
   return (
     <ProjectCardContainer>
       <header>
-        <img src={image} alt={alt_image}/>
+        <figure>
+          <img src={image} alt={alt_image}/>
+        </figure>
         <h5>{ title }</h5>
         <p>{ description }</p>
       </header>
       <footer>
-        <div>
+        <div className="links-project">
           { web_link && <a href={web_link}> <BsGlobe size={15} /> </a> }
           { github_link && <a href={github_link}> <VscGithub size={15} /> </a>}
           { figma_link && <a href={figma_link}> <SiFigma size={15} /> </a> }
         </div>
-        <ul>
+        <figure className="project-languages">
           {
-            technologies.slice(0, 2).map((value, index) => (
-              <li key={index}>
+            technologies.slice(0, 4).map((value, index) => (
+              <div key={index}>
                 <img src={technologies_icons[value.toLowerCase()]} alt={value} />
-              </li>
+              </div>
             ))
           }
-        </ul>
+        </figure>
       </footer>
     </ProjectCardContainer>
   )

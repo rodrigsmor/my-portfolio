@@ -2,9 +2,13 @@ import styled from "styled-components";
 import BackgroundImage from '../../../assets/images/images/bg-projects.jpg'
 
 export const ProjectSectionContentContainer = styled.div`
+  gap: 28px;
   width: 100vw;
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   height: fit-content;
+  transition: all .5s ease;
   background: linear-gradient(0deg, rgba(43, 29, 82, 0.9), rgba(43, 29, 82, 0.9)), url(${BackgroundImage});
   background-repeat: repeat;
   background-size: cover;
@@ -164,20 +168,42 @@ export const FiltersSelectedGroup = styled.ul`
 `;
 
 export const ProjectsListing = styled.ul`
+  gap: 24px;
   display: flex;
   list-style: none;
   align-items: center;
-  gap: 24px;
+  flex-direction: column;
   justify-content: center;
 
-  > li {
-    flex: 1;
-    flex-shrink: 0;
+  
+  @media screen and (max-width: 767px) {
+    > li {
+      flex: 1;
+      flex-shrink: 0;
+      min-width: 100%;
+      max-width: 100%;
+    }
   }
 
   @media ${({ theme }) => theme.media.tablet } {
-    > li {
-      max-width: 243.5px;
+    display: grid;
+    grid-auto-columns: minmax(1fr, calc(100% / 2));
+    grid-template-columns: repeat(auto-fit, minmax(243.5px, 1fr));
+
+    &.fews-results {
+      grid-template-columns: repeat(2, minmax(243.5px, 1fr));
+    }
+  }
+
+  @media screen and (min-width: 811.20px) {
+    &.fews-results {
+      grid-template-columns: repeat(3, minmax(243.5px, 1fr));
+    }
+  }
+
+  @media ${({ theme }) => theme.media.desktop } {
+    &.fews-results {
+      grid-template-columns: repeat(4, minmax(243.5px, 1fr));
     }
   }
 `;
