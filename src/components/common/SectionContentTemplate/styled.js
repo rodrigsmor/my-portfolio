@@ -29,7 +29,7 @@ export const SectionContentTemplateWrapper = styled.div`
   z-index: 20;
   width: 100vw;
   height: 100dvh;
-  bottom: -150%;
+  bottom: -200vh;
   max-width: 100vw;
   overflow: hidden;
   background: transparent;
