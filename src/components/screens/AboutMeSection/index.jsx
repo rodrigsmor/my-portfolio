@@ -2,6 +2,8 @@ import { useLocation } from "react-router-dom";
 import { AboutMeIllustration, AboutMeSectionContainer } from "./styled";
 import { SeeMoreButton } from "../../Buttons/SeeMoreButton";
 import Illustration from '../../../assets/images/images/aboutme-home.png'
+import { SectionContentTemplate } from "../../common/SectionContentTemplate";
+import { AboutMeSectionContent } from "../../modals/AboutMeSectionContent";
 
 export const AboutMeSection = () => {
   const { pathname } = useLocation();
@@ -41,6 +43,9 @@ export const AboutMeSection = () => {
         </p>
       </article>
       <SeeMoreButton type_modal='about-me' />
+      <SectionContentTemplate sectionName='about-me'>
+        <AboutMeSectionContent />
+      </SectionContentTemplate>
     </AboutMeSectionContainer>
   );
 }

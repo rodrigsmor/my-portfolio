@@ -18,9 +18,9 @@ export const ProjectCard = ({ values }) => {
       </header>
       <footer>
         <div className="links-project">
-          { web_link && <a href={web_link}> <BsGlobe size={15} /> </a> }
-          { github_link && <a href={github_link}> <VscGithub size={15} /> </a>}
-          { figma_link && <a href={figma_link}> <SiFigma size={15} /> </a> }
+          { web_link && <a href={web_link} title='web link'> <BsGlobe size={15} /> </a> }
+          { github_link && <a href={github_link} title='github link'> <VscGithub size={15} /> </a>}
+          { figma_link && <a href={figma_link} title='figma link'> <SiFigma size={15} /> </a> }
         </div>
         <figure className="project-languages">
           {
