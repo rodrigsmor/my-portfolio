@@ -166,7 +166,7 @@ export const ArticleContentWrapper = styled.div`
     font-weight: ${({ theme }) => theme.typography.weight.regular };
   }
 
-  > button {
+  > a {
     width: 100%;
     height: 46px;
     align-self: flex-end;
@@ -209,7 +209,7 @@ export const ArticleContentWrapper = styled.div`
       margin: 36px 0 29px;
     }
 
-    > button {
+    > a {
       width: 230px;
     }
   }
