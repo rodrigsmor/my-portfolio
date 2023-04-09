@@ -5,6 +5,8 @@ import FirstImage from '../../../assets/images/images/project-first.jpg'
 import SecondImage from '../../../assets/images/images/projects-second.jpg'
 import Thirdmage from '../../../assets/images/images/project-third.jpg'
 import { SeeMoreButton } from "../../Buttons/SeeMoreButton";
+import { SectionContentTemplate } from "../../common/SectionContentTemplate";
+import ProjectSectionContent from "../../modals/ProjectSectionContent";
 
 export const Projects = () => {
   const { pathname } = useLocation();
@@ -21,7 +23,10 @@ export const Projects = () => {
           <DivImage imageLink={Thirdmage}></DivImage>
         </ImagePreviewWrapper>
       </div>
-      <SeeMoreButton />
+      <SeeMoreButton type_modal='projects' />
+      <SectionContentTemplate sectionName='projects'>
+        <ProjectSectionContent />
+      </SectionContentTemplate>
     </ProjectsContainer>
   )
 }

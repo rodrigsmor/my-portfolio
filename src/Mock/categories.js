@@ -1,0 +1,21 @@
+export const categories = [
+  'Javascript',
+  'CSS',
+  'HTML',
+  'React',
+  'Redux',
+  'Axios',
+  'Vite',
+  'NPM',
+  'Yarn',
+  'SASS',
+  'Nextjs',
+  'TailwindCSS',
+  'Java',
+  'Spring',
+  'JWT',
+  'API REST',
+  'Firebase',
+  'Styled-components',
+  'Api Context'
+]
