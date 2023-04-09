@@ -45,11 +45,16 @@ export const SeeMoreButtonContainer = styled.button`
   background: transparent;
   flex-direction: column;
   justify-content: flex-start;
-  border: 0px solid transparent;;
+  border: 0px solid transparent;
   animation: ${MouseContainerAnimation} 1.2s ease infinite alternate;
   
   &.hide {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  &:not(.hide) {
+    transition-delay: .8s;
   }
   
   > .mouse-draw {
