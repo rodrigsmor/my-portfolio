@@ -4,6 +4,7 @@ import { FilterProjectsTabBar, FiltersSelectedGroup, HeaderSectionContent, Proje
 import { Checkbox } from "../../Forms/Checkbox";
 import { projects } from "../../../Mock/projects";
 import { ProjectCard } from "../../cards/ProjectCard";
+import { useMemo } from "react";
 
 const ProjectSectionContent = () => {
   const [ currentTab, setCurrentTab ] = useState('all');
@@ -27,6 +28,19 @@ const ProjectSectionContent = () => {
       label: 'Front-end'
     }
   ]
+
+  const projectsList = useMemo(() => {
+    let projectsMatched = projects;
+    if(currentTab !== 'all') {
+      projectsMatched = projects.filter(({ categories }) => categories.includes(currentTab))
+    }
+
+    if(selectedFilters.length > 0) {
+      projectsMatched = projectsMatched.filter(({ technologies }) => technologies.some(value => selectedFilters.includes(value)))
+    }
+
+    return projectsMatched;
+  }, [ selectedFilters, currentTab ])
 
   return (
     <ProjectSectionContentContainer>
@@ -61,9 +75,9 @@ const ProjectSectionContent = () => {
           </FiltersSelectedGroup>
         </FilterProjectsTabBar>
       </HeaderSectionContent>
-      <ProjectsListing>
+      <ProjectsListing className={`${projectsList.length <= 2 && 'fews-results'}`}>
         {
-          projects.map((value, index) => {
+          projectsList.map((value, index) => {
             return (
               <li key={index}>
                 <ProjectCard values={value} />

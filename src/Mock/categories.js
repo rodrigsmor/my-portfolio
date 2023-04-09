@@ -14,5 +14,8 @@ export const categories = [
   'Java',
   'Spring',
   'JWT',
-  'API REST'
+  'API REST',
+  'Firebase',
+  'Styled-components',
+  'Api Context'
 ]
