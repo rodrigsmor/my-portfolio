@@ -44,7 +44,6 @@ export const HeaderSectionContent = styled.header`
       min-height: 12px;
       content: '';
       display: block;
-      border-radius: 2px;
       position: absolute;
       background: linear-gradient(90.31deg, ${({ theme }) => theme.colors.secondary.main} 0%, ${({ theme }) => theme.colors.primary.main } 104.35%);
       border-radius: 8px;
@@ -162,4 +161,23 @@ export const FiltersSelectedGroup = styled.ul`
   flex-wrap: wrap;
   list-style: none;
   transition: all .5s ease;
+`;
+
+export const ProjectsListing = styled.ul`
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+
+  > li {
+    flex: 1;
+    flex-shrink: 0;
+  }
+
+  @media ${({ theme }) => theme.media.tablet } {
+    > li {
+      max-width: 243.5px;
+    }
+  }
 `;
