@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FilterButton, FilterByContainer, FilterForm } from "./styled";
 import { RiFilter3Fill } from "react-icons/ri";
 import { categories } from "../../../Mock/categories";
 import { Checkbox } from "../Checkbox";
 import { Button } from "../../Buttons/Button";
 
-const FilterBy = () => {
+const FilterBy = ({ saveSelectedFilters, selectedFiltersSaved }) => {
   const [isToShowForm, setIsToShowForm] = useState(false);
   const [ selectedFilters, setSelectedFilters ] = useState([]);
 
@@ -16,8 +16,12 @@ const FilterBy = () => {
       setSelectedFilters([...selectedFilters, value])
   }
 
+  useEffect(() => {
+    setSelectedFilters(selectedFiltersSaved)
+  }, [ selectedFiltersSaved ]);
+
   return (
-    <FilterByContainer aria-labelledby="filterby_span">
+    <FilterByContainer aria-labelledby="filterby_span" className='filterby_container'>
       <FilterButton aria-haspopup={"true"} aria-expanded="filterby_form" onClick={e => setIsToShowForm(!isToShowForm)}>
         <RiFilter3Fill size={24} />
         <span id='filterby_span'>
@@ -54,7 +58,10 @@ const FilterBy = () => {
             theme={'gradient'}
             props={{
               type: 'button',
-              onClick: () => setIsToShowForm(false)
+              onClick: () => {
+                saveSelectedFilters(selectedFilters)
+                setIsToShowForm(false)
+              }
             }}
           >
             salvar

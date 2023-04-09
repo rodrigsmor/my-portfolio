@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const FilterByContainer = styled.div`
+  top: 0;
   height: fit-content;
   width: fit-content;
-  position: absolute;
-  left: 0;
+  position: relative;
 `;
 
 export const FilterButton = styled.button`
   gap: 10px;
   height: 38px;
   padding: 0 14px;
+  justify-content: center;
   background: transparent;
   border-radius: 16px;
   display: flex;
@@ -29,8 +30,8 @@ export const FilterButton = styled.button`
 
 export const FilterForm = styled.form`
   top: 46px;
-  width: 308px;
-  height: 380px;
+  width: 100%;
+  height: 50dvh;
   z-index: 25;
   padding: 14px;
   gap: 14px;
@@ -98,5 +99,10 @@ export const FilterForm = styled.form`
       flex: 1;
       height: 40px;
     }
+  }
+
+  @media ${({ theme }) => theme.media.desktop } {
+    width: 308px;
+    height: 380px;
   }
 `;
