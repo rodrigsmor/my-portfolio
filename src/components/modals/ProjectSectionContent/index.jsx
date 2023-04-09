@@ -1,7 +1,9 @@
 import { useState } from "react";
 import FilterBy from "../../Forms/FilterBy";
-import { FilterProjectsTabBar, FiltersSelectedGroup, HeaderSectionContent, ProjectSectionContentContainer, TabsBar, TabsBarContainer } from "./styled";
+import { FilterProjectsTabBar, FiltersSelectedGroup, HeaderSectionContent, ProjectSectionContentContainer, ProjectsListing, TabsBar, TabsBarContainer } from "./styled";
 import { Checkbox } from "../../Forms/Checkbox";
+import { projects } from "../../../Mock/projects";
+import { ProjectCard } from "../../cards/ProjectCard";
 
 const ProjectSectionContent = () => {
   const [ currentTab, setCurrentTab ] = useState('all');
@@ -59,6 +61,17 @@ const ProjectSectionContent = () => {
           </FiltersSelectedGroup>
         </FilterProjectsTabBar>
       </HeaderSectionContent>
+      <ProjectsListing>
+        {
+          projects.map((value, index) => {
+            return (
+              <li key={index}>
+                <ProjectCard values={value} />
+              </li>
+            )
+          })
+        }
+      </ProjectsListing>
     </ProjectSectionContentContainer>
   )
 }
