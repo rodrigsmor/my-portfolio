@@ -48,6 +48,7 @@ export const SectionContentTemplateWrapper = styled.div`
 
   &:not(.opened) {
     transition-delay: .6s;
+
     &:before {
       content: '';
       width: 100dvw;
@@ -57,18 +58,18 @@ export const SectionContentTemplateWrapper = styled.div`
       background: ${({ theme }) => theme.colors.background.main};
       animation: ${ModalClosingAnimation} .9s cubic-bezier(0.76, 0, 0.24, 1);
     }
-
-    > div.content-wrapper {
-    }
   }
   
   > div.content-wrapper {
-    &:before, &:after {
+    &:before{
+      top: 0;
       content: '';
       width: 100dvw;
       height: 0dvh;
       display: block;
       flex: 1;
+      poisition: absolute;
+
       background: ${({ theme }) => theme.colors.background.main};
     }
     
