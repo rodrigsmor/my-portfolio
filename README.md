@@ -2,8 +2,6 @@
   <img src="./public/Logo.svg" height="68px" width="68px" alt="portfolio logo" align="center"/>
 </div>
 
-<br/>
-
 <h1 align="center">Rodrigo's Portfolio</h1>
 
 ## 👋🏽 Introduction
@@ -12,7 +10,13 @@ Welcome to my portfolio! I’m a full-stack software developer who uses programm
 
 ## 📚 Table of contents
 
-
+- [👋🏽 Introduction](#introduction)
+- [📚 Table of contents](#table-of-contents)
+- [👨🏽‍💻 About me](#about-me)
+- [🛠 Technologies](#technologies)
+- [📺 How to view](#how-to-view)
+- [🚀 How to run](#how-to-run)
+- [🖼 Previews](#preview)
 
 ## 👨🏽‍💻 About me
 
@@ -63,4 +67,4 @@ DET: The application will probably be running on `http://localhost:5173/`.
 
 ## 🖼 Previews
 
-![A preview of the portfolio](https://i.ibb.co/44RCgQS/Screen-Recording-2023-08-22-at-22-04-36.gif)
+![A preview of the portfolio](https://iili.io/HpUCpXR.gif)
