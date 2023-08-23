@@ -17,6 +17,7 @@ Welcome to my portfolio! I’m a full-stack software developer who uses programm
 - [📺 How to view](#-how-to-view)
 - [🚀 How to run](#-how-to-run)
 - [🖼 Previews](#-previews)
+- [👨🏽‍🦱 Author](#-author)
 
 ## 👨🏽‍💻 About me
 
@@ -68,3 +69,26 @@ DET: The application will probably be running on `http://localhost:5173/`.
 ## 🖼 Previews
 
 ![A preview of the portfolio](./public/preview-1.gif)
+
+## 👨🏽‍🦱 Author
+
+<img height="100px" src="https://avatars.githubusercontent.com/u/78985382?v=4" alt="Rodrigo profile picture">
+<p>Developed with love by <b size="48px">Rodrigo Moreira</b> 
+ 💜🚀</p>
+
+---
+
+<div>
+  <a href="mailto:rodrigsmor.pf@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="gmail">
+  </a>
+  <a href="https://www.linkedin.com/in/psrodrigomoreira/">
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://www.behance.net/rodrigsmor">
+    <img src="https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white" alt="behance">
+  </a>
+  <a href="https://dev.to/psrodrigs">
+    <img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" alt="dev.to">
+  </a>
+</div>
