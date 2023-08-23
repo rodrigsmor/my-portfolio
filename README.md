@@ -60,3 +60,7 @@ npm run dev
 ```
 
 DET: The application will probably be running on `http://localhost:5173/`.
+
+## 🖼 Previews
+
+![A preview of the portfolio](https://i.ibb.co/44RCgQS/Screen-Recording-2023-08-22-at-22-04-36.gif)
