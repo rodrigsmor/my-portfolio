@@ -30,3 +30,33 @@ As mentioned earlier, I’m a full-stack software developer with a strong emphas
   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
   <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" alt="SASS">
 </div>
+
+## 📺 How to view
+
+In case you want to take a look at the application, you can access the project at the official link just by [clicking here](https://rm-portfoliof.netlify.app/).
+
+## 🚀 How to run
+
+To install the application, you first need to clone the project to your local device. To do this, simply run the following command in your terminal:
+
+```
+git clone https://github.com/rodrigsmor/my-portfolio.git
+```
+
+With the application cloned on your local device, go to the portfolio directory and with the package manager of your choice, run the command to install the project packages.
+
+```
+# go to the cloned project directory
+cd my-portfolio
+
+# install dependencies
+npm install
+```
+
+Once the dependencies are effectively installed, you are now fully able to run the application, so just run the following command:
+
+```
+npm run dev
+```
+
+DET: The application will probably be running on `http://localhost:5173/`.
