@@ -10,13 +10,13 @@ Welcome to my portfolio! I’m a full-stack software developer who uses programm
 
 ## 📚 Table of contents
 
-- [👋🏽 Introduction](#introduction)
-- [📚 Table of contents](#table-of-contents)
-- [👨🏽‍💻 About me](#about-me)
-- [🛠 Technologies](#technologies)
-- [📺 How to view](#how-to-view)
-- [🚀 How to run](#how-to-run)
-- [🖼 Previews](#preview)
+- [👋🏽 Introduction](#-introduction)
+- [📚 Table of contents](#-table-of-contents)
+- [👨🏽‍💻 About me](#-about-me)
+- [🛠 Technologies](#-technologies)
+- [📺 How to view](#-how-to-view)
+- [🚀 How to run](#-how-to-run)
+- [🖼 Previews](#-previews)
 
 ## 👨🏽‍💻 About me
 
@@ -67,4 +67,4 @@ DET: The application will probably be running on `http://localhost:5173/`.
 
 ## 🖼 Previews
 
-![A preview of the portfolio](https://iili.io/HpUCpXR.gif)
+![A preview of the portfolio](./public/preview-1.gif)
