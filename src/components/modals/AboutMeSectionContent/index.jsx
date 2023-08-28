@@ -20,7 +20,7 @@ export const AboutMeSectionContent = () => {
               Sou um desenvolvedor de software Full Stack apaixonado por tecnologia e inovação, que não abre mão de expandir cada vez mais meus conhecimentos. Adoro construir interfaces de usuário responsivas e atrativas, desempenhando desde o processo de design até o desenvolvimento da aplicação. Sempre busco a melhoria profissional e pessoal, almejando tornar-se cada vez mais capacitado e a melhor versão de mim. Trabalhar comigo é trabalhar com uma pessoa descontraída, mas empenhada em entregar o melhor resultado possível.
             </p>
             <Button type="link" props={{
-              href: 'https://docs.google.com/document/d/1RbSp81C3ZVFqUQQ1wwS4sFgy8zOT2vOwu_Yv1iub-G8/edit?usp=sharing'
+              href: 'https://docs.google.com/document/d/1gHDYk6O-Y9DcGPp9p7E2ljeNSPgzabAt6TGvqRb0m8g/edit?usp=sharing'
             }}>
               Baixar CV
             </Button>
