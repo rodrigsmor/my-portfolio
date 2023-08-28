@@ -80,6 +80,26 @@ export const knowledges = [
     level: 'básico',
     image: 'https://img.icons8.com/color/512/bootstrap.png'
   }, {
+    name: 'Docker',
+    level: 'Intermediário',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+  }, {
+    name: 'MongoDB',
+    level: 'básico',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+  }, {
+    name: 'Kafka',
+    level: 'básico',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg',
+  }, {
+    name: 'NestJS',
+    level: 'básico',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg',
+  }, {
+    name: 'Jest',
+    level: 'básico',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
+  }, {
     name: 'Firebase',
     level: 'básico',
     image: 'https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png'
