@@ -1,9 +1,8 @@
-import { useContext, useEffect, useRef } from "react";
-import ModalContext from "../../../context/modalContext";
-import { IoReturnUpBackOutline } from 'react-icons/io5'
-import { BackButton, SectionContentTemplateWrapper } from "./styled";
-import calculatePercentage from "../../../utils/calculatePercentage";
 import { useLocation } from "react-router-dom";
+import { useContext, useEffect, useRef } from "react";
+import { IoReturnUpBackOutline } from 'react-icons/io5';
+import ModalContext from "../../../context/modalContext";
+import { BackButton, SectionContentTemplateWrapper } from "./styled";
 import { modalContextInitialState } from "../../../utils/contextInitialState";
 
 export const SectionContentTemplate = ({ children, sectionName }) => {
@@ -12,7 +11,8 @@ export const SectionContentTemplate = ({ children, sectionName }) => {
   const [showModal, setShowModal] = useContext(ModalContext);
 
   function updateProgressPercentage(element) {
-    setShowModal({ ...showModal, progress: calculatePercentage(element.scrollHeight, element.scrollTop + element.offsetHeight) })
+    const maxScroll = element.scrollHeight - window.innerHeight;
+    setShowModal({ ...showModal, progress: `${(element.scrollTop / maxScroll) * 100 }%`})
   }
 
   useEffect(() => {

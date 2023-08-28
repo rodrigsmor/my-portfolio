@@ -16,11 +16,19 @@ export const AboutMeSectionContent = () => {
           </figure>
           <ArticleContentWrapper>
             <h4>Perfil profissional</h4>
-            <p>
-              Sou um desenvolvedor de software Full Stack apaixonado por tecnologia e inovação, que não abre mão de expandir cada vez mais meus conhecimentos. Adoro construir interfaces de usuário responsivas e atrativas, desempenhando desde o processo de design até o desenvolvimento da aplicação. Sempre busco a melhoria profissional e pessoal, almejando tornar-se cada vez mais capacitado e a melhor versão de mim. Trabalhar comigo é trabalhar com uma pessoa descontraída, mas empenhada em entregar o melhor resultado possível.
-            </p>
+            <div>
+              <p>
+                Sou um desenvolvedor de software Full Stack formado em informática pelo Instituto Federal de São Paulo. Sendo apaixonado por tecnologia e inovação, estou em constante busca pela minha capacitação, o que me permite se adaptar rapidamente a novos desafios e expandir meu conhecimento acerca do mundo da programação.
+              </p>
+              <p>
+                Minha experiência contempla uma ampla gama de tecnologias, como JavaScript, TypeScript, Java, Spring Boot, React.js, Next.js, Node.js, TailwindCSS e dentre outras. Obtive experiências que abrangem desde o desenvolvimento de aplicações web responsivas e atrativas até a criação de APIs REST, incluindo algumas experiências com design de Interfaces de Usuário utilizando o Figma. Tenho expertise em metodologias ágeis como Kanban e Scrum, orquestração de containers com Docker e Kubernetes, Design Patterns, TDD, Gitflow e versionamento de código.
+              </p>
+              <p>
+                Estou comprometido em inovar e contribuir para soluções impactantes, utilizando de minha criatividade e proatividade para garantir o sucesso dos projetos a qual me envolvo. Com habilidades sólidas e um desejo incessante de crescimento, viso sempre aplicar minha paixão pela tecnologia e entregar resultados de alta qualidade.
+              </p>
+            </div>
             <Button type="link" props={{
-              href: 'https://docs.google.com/document/d/1RbSp81C3ZVFqUQQ1wwS4sFgy8zOT2vOwu_Yv1iub-G8/edit?usp=sharing'
+              href: 'https://docs.google.com/document/d/1gHDYk6O-Y9DcGPp9p7E2ljeNSPgzabAt6TGvqRb0m8g/edit?usp=sharing'
             }}>
               Baixar CV
             </Button>
