@@ -1,9 +1,8 @@
-import { useContext, useEffect, useRef } from "react";
-import ModalContext from "../../../context/modalContext";
-import { IoReturnUpBackOutline } from 'react-icons/io5'
-import { BackButton, SectionContentTemplateWrapper } from "./styled";
-import calculatePercentage from "../../../utils/calculatePercentage";
 import { useLocation } from "react-router-dom";
+import { useContext, useEffect, useRef } from "react";
+import { IoReturnUpBackOutline } from 'react-icons/io5';
+import ModalContext from "../../../context/modalContext";
+import { BackButton, SectionContentTemplateWrapper } from "./styled";
 import { modalContextInitialState } from "../../../utils/contextInitialState";
 
 export const SectionContentTemplate = ({ children, sectionName }) => {
