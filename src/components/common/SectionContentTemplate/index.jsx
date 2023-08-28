@@ -12,7 +12,8 @@ export const SectionContentTemplate = ({ children, sectionName }) => {
   const [showModal, setShowModal] = useContext(ModalContext);
 
   function updateProgressPercentage(element) {
-    setShowModal({ ...showModal, progress: calculatePercentage(element.scrollHeight, element.scrollTop + element.offsetHeight) })
+    const maxScroll = element.scrollHeight - window.innerHeight;
+    setShowModal({ ...showModal, progress: `${(element.scrollTop / maxScroll) * 100 }%`})
   }
 
   useEffect(() => {
