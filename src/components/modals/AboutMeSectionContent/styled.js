@@ -127,6 +127,7 @@ export const ContentSectionWrappers = styled.section`
 `;
 
 export const ArticleContentWrapper = styled.div`
+  gap: 24px;
   width: 100%;
   display: flex;
   position: relative;
@@ -157,13 +158,22 @@ export const ArticleContentWrapper = styled.div`
     }
   }
 
-  > p {
+  > div {
+    gap: 12px;
     width: 100%;
-    margin: 28px 0 34px;
-    text-align: justify;
-    color: ${({ theme }) => theme.colors.typography.main }CC;
-    font-size: ${({ theme }) => theme.typography.size.h5 };
-    font-weight: ${({ theme }) => theme.typography.weight.regular };
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+
+    > p {
+      width: 100%;
+      text-align: justify;
+      text-indent: 20px;
+      color: ${({ theme }) => theme.colors.typography.main }CC;
+      font-size: ${({ theme }) => theme.typography.size.h5 };
+      font-weight: ${({ theme }) => theme.typography.weight.regular };
+    }
   }
 
   > a {
