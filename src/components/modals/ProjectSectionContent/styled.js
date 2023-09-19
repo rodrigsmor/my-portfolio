@@ -187,23 +187,6 @@ export const ProjectsListing = styled.ul`
 
   @media ${({ theme }) => theme.media.tablet } {
     display: grid;
-    grid-auto-columns: minmax(1fr, calc(100% / 2));
-    grid-template-columns: repeat(auto-fit, minmax(243.5px, 1fr));
-
-    &.fews-results {
-      grid-template-columns: repeat(2, minmax(243.5px, 1fr));
-    }
-  }
-
-  @media screen and (min-width: 811.20px) {
-    &.fews-results {
-      grid-template-columns: repeat(3, minmax(243.5px, 1fr));
-    }
-  }
-
-  @media ${({ theme }) => theme.media.desktop } {
-    &.fews-results {
-      grid-template-columns: repeat(4, minmax(243.5px, 1fr));
-    }
+    grid-template-columns: repeat(auto-fill, minmax(243.5px, 1fr));
   }
 `;
