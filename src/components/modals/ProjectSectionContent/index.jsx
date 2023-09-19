@@ -75,7 +75,7 @@ const ProjectSectionContent = () => {
           </FiltersSelectedGroup>
         </FilterProjectsTabBar>
       </HeaderSectionContent>
-      <ProjectsListing className={`${projectsList.length <= 2 && 'fews-results'}`}>
+      <ProjectsListing>
         {
           projectsList.map((value, index) => {
             return (
