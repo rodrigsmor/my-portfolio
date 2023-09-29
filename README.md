@@ -64,7 +64,7 @@ Once the dependencies are effectively installed, you are now fully able to run t
 npm run dev
 ```
 
-DET: The application will probably be running on `http://localhost:5173/`.
+> 💭 DETAIL: The application will probably be running on `http://localhost:5173/`.
 
 ## 🖼 Previews
 
