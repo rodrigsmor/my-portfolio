@@ -1,5 +1,19 @@
 export const projects = [
   {
+    title: 'Currency Converter',
+    description: 'Um conversor de moedas com suporte a mais de 100 moedas e com internacionalização para inglês e português.',
+    github_link: 'https://github.com/rodrigsmor/currency-converter',
+    figma_link: 'https://www.figma.com/file/2qdeWssnXH9s4TqY1M7kM4/Currency-Converter?type=design&node-id=0%3A1&mode=design&t=t7QExgWVf1qgCNK6-1',
+    image: 'https://i.ibb.co/kqqy3Np/Thumbnail-1.png',
+    alt_image: '',
+    technologies: [
+      'React', 'Typescript', 'HTML', 'Next', 'node.js', 'CSS', 'Javascript', 'Styled-components'
+    ],
+    categories: [
+      'front-end', 'web', 'back-end'
+    ]
+  },
+  {
     title: 'MyNotes - aplicação de anotações',
     description: 'Mynotes é uma aplicação web de anotações desenvolvida com React.js, typescript e styled-components.',
     web_link: 'https://rm-mynotes.netlify.app/',
