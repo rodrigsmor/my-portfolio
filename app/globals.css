@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* background colors */
+  --background-extradark: #0C0816;
+  --background-dark: #1B1231;
+  --background-main: #291B4B;
+  --background-light: #372565;
+  --background-extralight: #493187;
+
+  /* typography colors */
+  --typography-extradark: #B2A2DD;
+  --typography-dark: #C2B4E4;
+  --typography-main: #D1C7EB;
+  --typography-light: #E0DAF1;
+  --typography-extralight: #F0ECF8;
+
+  /* primary colors */
+  --primary-extradark: #23024B;
+  --primary-dark: #450396;
+  --primary-main: #6805E0;
+  --primary-light: #8F33FF;
+  --primary-extralight: #C799FF;
+
+  /* secondary colors */
+  --secondary-extradark: #760A60;
+  --secondary-dark: #BC109A;
+  --secondary-main: #ED2BC6;
+  --secondary-light: #F372D9;
+  --secondary-extralight: #F9B8EC;
+
+  /* ----------- */
+
+  /* font sizes */
+  --font-h1: 48px;
+  --font-h2: 36px;
+  --font-h3: 24px;
+  --font-h4: 20px;
+  --font-h5: 18px;
+  --font-h6: 16px;
+  --font-h7: 14px;
+
+  /* font weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* shadows */
+  --shadow-primary-main: 0px 0px 28px 8px rgba(104, 5, 224, 0.4);
+
+  /* gradients */
+  --gradient-primaryToSecondary-x-main: linear-gradient(90deg, #6805E0 0%, #ED2BC6 100%);
+  --gradient-primaryToSecondary-y-main: linear-gradient(180deg, #6805E0 0%, #ED2BC6 100%);
+  --gradient-metalic-style: linear-gradient(90deg, #0C0816 0%, #231A3C 50%, #0C0816 100%);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background-extradark);
+  color: var(--typography-extralight);
+  font-family: "Prompt", Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", Helvetica, sans-serif;
+}
