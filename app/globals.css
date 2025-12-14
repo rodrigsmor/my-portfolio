@@ -32,37 +32,36 @@
   /* ----------- */
 
   /* font sizes */
-  --font-h1: 48px;
-  --font-h2: 36px;
-  --font-h3: 24px;
-  --font-h4: 20px;
-  --font-h5: 18px;
-  --font-h6: 16px;
-  --font-h7: 14px;
+  --font-h1: 3rem;
+  --font-h2: 2.25rem;
+  --font-h3: 1.5rem;
+  --font-h4: 1.25rem;
+  --font-h5: 1.125rem;
+  --font-h6: 1rem;
+  --font-h7: .875rem;
 
   /* font weights */
-  --font-light: 300;
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-semibold: 600;
-  --font-bold: 700;
-  --font-extrabold: 800;
+  --font-light: 200;
+  --font-regular: 300;
+  --font-medium: 400;
+  --font-semibold: 500;
+  --font-bold: 600;
+  --font-extrabold: 700;
 
   /* shadows */
-  --shadow-primary-main: 0px 0px 28px 8px rgba(104, 5, 224, 0.4);
+  --shadow-primary-main: 0 0 1.75rem .5rem rgba(104, 5, 224, 0.4);
 
   /* gradients */
   --gradient-primaryToSecondary-x-main: linear-gradient(90deg, #6805E0 0%, #ED2BC6 100%);
   --gradient-primaryToSecondary-y-main: linear-gradient(180deg, #6805E0 0%, #ED2BC6 100%);
+  --gradient-primaryToSecondary-x-dark: linear-gradient(90deg, #450396 0%, #BC109A 100%);
   --gradient-metalic-style: linear-gradient(90deg, #0C0816 0%, #231A3C 50%, #0C0816 100%);
-}
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+  /* media sizes */
+  /* --media-mobile: 320px;
+  --media-tablet: 768px;
+  --media-desktop: 1024px; */
+}
 
 body {
   background: var(--background-extradark);

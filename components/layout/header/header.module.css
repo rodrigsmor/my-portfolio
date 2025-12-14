@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  position: fixed;
+  height: 4.625rem;
+  inset: 0 0 auto 0;
+  padding: 0 1.75rem;
+  align-items: center;
+  justify-content: space-between;
+
+  > :global(.outline-select) {
+    display: none; 
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 0 7.84dvw;
+  }
+
+  .header > :global(.outline-select) {
+    display: flex; 
+  }
+
+  .header > :global(.icon-button) {
+    display: none; 
+  }
+}
