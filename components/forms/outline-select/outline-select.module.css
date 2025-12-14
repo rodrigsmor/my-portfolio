@@ -1,0 +1,32 @@
+.outlineSelect {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 2.5rem;
+  height: 2.75rem;
+  max-height: 2.75rem;
+  padding: 0 1.125rem;
+  justify-content: center;
+  gap: .375rem;
+  overflow: hidden;
+  color: var(--typography-extralight);
+  transition: all .3s ease;
+  outline: 1px solid color-mix(in srgb, var(--typography-extralight) 10%, transparent);
+
+  > select {
+    width: 100%;
+    height: 100px;
+    opacity: 0;
+    position: absolute;
+  }
+
+  > p {
+    font-size: var(--font-h7);
+    font-weight: var(--font-medium);
+  }
+
+  &:focus-within,
+  &:focus-visible  {
+    outline: 2px solid var(--typography-extralight);
+  }
+}

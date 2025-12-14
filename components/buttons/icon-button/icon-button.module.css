@@ -1,0 +1,19 @@
+.iconButton {
+  display: flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  cursor: pointer;
+  max-width: 2.75rem;
+  max-height: 2.75rem;
+  border-radius: .875rem;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease;
+  border: 0 solid transparent;
+  background: transparent;
+  color: var(--typography-extralight);
+
+  &:hover {
+    background: color-mix(in srgb, var(--typography-extralight) 10%, transparent)
+  }
+}

@@ -1,0 +1,45 @@
+.button {
+  z-index: 1;
+  gap: .625rem;
+  height: 3rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 0 1.125rem;
+  min-width: fit-content;
+  justify-content: center;
+  border-radius: 1.125rem;
+  transition: all 0.3s ease-in-out;
+  font-size: var(--font-h6);
+  border: 0 solid transparent;
+  font-weight: var(--font-medium);
+  color: var(--typography-extralight);
+  
+  &:hover {
+    background: color-mix(in srgb, var(--typography-extralight) 10%, transparent)
+  }
+
+  &:global(.gradient) {
+    position: relative;
+    background-position: 0 0;
+    box-shadow: var(--shadow-primary-main);
+    background: var(--gradient-primaryToSecondary-x-main);
+
+    &::after {
+      position: absolute;
+      content: "";
+      inset: 0;
+      border-radius: 1.125rem;
+      background: var(--gradient-primaryToSecondary-x-dark);
+      z-index: -1;
+      transition: opacity .3s linear;
+      opacity: 0;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
