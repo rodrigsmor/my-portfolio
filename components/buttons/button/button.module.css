@@ -16,7 +16,7 @@
   color: var(--typography-extralight);
   
   &:hover {
-    background: color-mix(in srgb, var(--typography-extralight) 10%, transparent)
+    background: color-mix(in srgb, var(--typography-extralight) 10%, transparent);
   }
 
   &:global(.gradient) {

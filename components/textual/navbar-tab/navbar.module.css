@@ -1,0 +1,40 @@
+.navbarTab {
+  z-index: 10;
+  height: 100%;
+  width: 5.75rem;
+  display: flex;
+  position: relative;
+  min-width: 5.75rem;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  font-size: var(--font-h6);
+  color: var(--typography-light);
+  font-weight: var(--font-regular);
+
+  &::after {
+    content: '';
+    width: 0px;
+    height: .125rem;
+    position: absolute;
+    border-radius: .25rem;
+    transition: all .3s ease;
+    inset: auto auto 1.25rem auto;
+    background: var(--gradient-primaryToSecondary-x-main);
+  }
+
+  &[aria-current="page"]  {
+    font-weight: var(--font-semibold);
+  }
+
+  &:hover,
+  &[aria-current="page"] {
+    &::after {
+      width: 1.75rem;
+    }
+  }
+
+  &:not(&[aria-current="page"]):hover {
+    color: color-mix(in srgb, var(--typography-extralight) 50%, transparent);
+  }
+}
