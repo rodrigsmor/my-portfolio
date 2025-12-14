@@ -1,11 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Prompt } from "next/font/google";
+import { Prompt, Turret_Road } from "next/font/google";
 
 const prompt = Prompt({
   variable: '--font-prompt',
   subsets: ["latin"],
   weight: ['100', '200', '300', '400','500', '600', '700', '800', '900']
+});
+
+const turret = Turret_Road({
+  variable: '--font-turret_road',
+  subsets: ["latin"],
+  weight: ['400']
 });
 
 export const metadata: Metadata = {
@@ -21,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${prompt.variable} antialiased`}
+        className={`${prompt.variable} ${turret.variable} antialiased`}
       >
         {children}
       </body>

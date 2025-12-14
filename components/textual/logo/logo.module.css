@@ -1,0 +1,27 @@
+.logo {
+  gap: .875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoImage {
+  width: 2.25rem;
+  height: 2.25rem;
+  max-width: 2.25rem;
+  max-height: 2.25rem;
+}
+
+.logoTypo {
+  font-size: 1.25rem;
+  font-family: "Turret Road", sans-serif;
+  color: var(--typography-extralight);
+
+  > span {
+    background: var(--gradient-primaryToSecondary-y-main);
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
