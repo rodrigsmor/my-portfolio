@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './header.module.css'
 import { List } from 'phosphor-react';
 import { Logo } from '@/components/textual/logo';

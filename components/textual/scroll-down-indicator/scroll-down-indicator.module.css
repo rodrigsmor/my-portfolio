@@ -1,0 +1,36 @@
+.scrollDownIndicator {
+  display: flex;
+  gap: 1.125rem;
+  align-items: flex-end;
+  height: fit-content;
+  min-height: fit-content;
+  inset: auto 3rem 2.375rem auto;
+  flex-direction: column;
+  position: absolute;
+
+  p {
+    letter-spacing: .18em;
+    font-size: var(--font-h7);
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    font-weight: var(--font-medium);
+  }
+
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
+  @media (min-width: 1024px) {
+    inset: auto 7.84dvw 2.375rem auto;
+  }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}

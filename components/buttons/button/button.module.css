@@ -13,10 +13,15 @@
   font-size: var(--font-h6);
   border: 0 solid transparent;
   font-weight: var(--font-medium);
+  background: transparent;
   color: var(--typography-extralight);
   
   &:hover {
     background: color-mix(in srgb, var(--typography-extralight) 10%, transparent);
+  }
+
+  &:global(.outline) {
+    outline: 1px solid color-mix(in srgb, var(--typography-extralight) 20%, transparent);
   }
 
   &:global(.gradient) {

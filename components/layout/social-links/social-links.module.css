@@ -1,0 +1,28 @@
+.socialLinksContainer {
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  :global(.social-list) {
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    color: var(--typography-extralight);
+
+    li {
+      color: var(--typography-extralight);
+
+      a {
+        transition: all .3s ease;
+        color: var(--typography-extralight);
+
+        &:hover {
+          opacity: .5;
+        }
+      }
+    }
+  }
+}
