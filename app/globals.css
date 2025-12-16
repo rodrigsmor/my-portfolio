@@ -49,7 +49,8 @@
   --font-extrabold: 700;
 
   /* shadows */
-  --shadow-primary-main: 0 0 1.75rem .5rem rgba(104, 5, 224, 0.4);
+  --shadow-primary-main: 0 0 1.75rem .5rem rgba(104, 5, 224, .4);
+  --text-shadow-primary-main: 0px 0px 28px rgba(104, 5, 224, .4);
 
   /* gradients */
   --gradient-primaryToSecondary-x-main: linear-gradient(90deg, #6805E0 0%, #ED2BC6 100%);

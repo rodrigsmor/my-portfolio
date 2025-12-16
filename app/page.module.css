@@ -3,4 +3,9 @@
   max-width: 100dvw;
   height: fit-content;
   background-color: var(--background-extradark);
+
+  main {
+    max-width: 100dvw;
+    overflow: hidden
+  }
 }
