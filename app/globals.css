@@ -49,6 +49,7 @@
   --font-extrabold: 700;
 
   /* shadows */
+  --shadow-header: 0px 0px 8px 1px rgba(0,0,0,0.4);
   --shadow-primary-main: 0 0 1.75rem .5rem rgba(104, 5, 224, .4);
   --text-shadow-primary-main: 0px 0px 28px rgba(104, 5, 224, .4);
 
@@ -62,6 +63,10 @@
   /* --media-mobile: 320px;
   --media-tablet: 768px;
   --media-desktop: 1024px; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

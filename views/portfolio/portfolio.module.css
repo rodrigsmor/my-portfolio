@@ -1,0 +1,15 @@
+.pageLayout {
+  overflow: hidden;
+  max-width: 100dvw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-extradark);
+
+  main {
+    max-width: 100dvw;
+    overflow: hidden
+  }
+}

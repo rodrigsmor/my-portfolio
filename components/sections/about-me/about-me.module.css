@@ -1,0 +1,82 @@
+.aboutMeContainer {
+  gap: 4.25rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  min-height: 100dvh;
+  height: max-content;
+  flex-direction: column;
+  padding: 5.25rem 1.75rem;
+  background: var(--gradient-metalic-style);
+}
+
+.aboutMeGreetings {
+  gap: 1.125rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: var(--font-h5);
+  color: var(--typography-light);
+  font-weight: var(--font-semibold);
+
+  span {
+    height: 1.75rem;
+    width: 1.75rem;
+    min-height: 1.75rem;
+    min-width: 1.75rem;
+    background: var(--gradient-primaryToSecondary-y-main);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+}
+
+.scrollLine {
+  width: .063rem;
+  height: 12.375rem;
+  border-radius: .063rem;
+  display: block;
+  opacity: .2;
+  position: relative;
+  background-color: var(--typography-extralight);
+}
+
+.subtitleText {
+  gap: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: var(--font-h5);
+  font-weight: var(--font-semibold);
+  color: var(--typography-extralight);
+
+  span {
+    font-size: var(--font-h3);
+    font-weight: var(--font-regular);
+    color: color-mix(in srgb, var(--typography-extralight) 90%, transparent);
+
+    em {
+      font-style: normal;
+      padding: 0 0 0 .5rem;
+      font-weight: var(--font-semibold);
+      color: var(--typography-extralight);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .aboutMeGreetings {
+    font-size: var(--font-h3);
+  }
+
+  .subtitle {
+    font-size: var(--font-h3);
+
+    span {
+      font-size: var(--font-h2);
+    }
+  }
+}

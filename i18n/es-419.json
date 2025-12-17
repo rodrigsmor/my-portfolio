@@ -37,5 +37,13 @@
         "ai": "Inteligencia Artificial"
       }
     }
+  },
+  "AboutMe": {
+    "SectionTitle": "Sobre Mí",
+    "SectionSubtitle": {
+      "prefix": "¡Buenas! ¿Todo bien?",
+      "label": "Mi nombre es"
+    },
+    "Greetings": "¡Es un placer tenerte aquí!"
   }
 }

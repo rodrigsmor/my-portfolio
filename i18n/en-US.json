@@ -37,5 +37,13 @@
         "ai": "Artificial Intelligence"
       }
     }
+  },
+  "AboutMe": {
+    "SectionTitle": "About Me",
+    "SectionSubtitle": {
+      "prefix": "Hello There!",
+      "label": "I'm"
+    },
+    "Greetings": "Welcome To My Portfolio!"
   }
 }

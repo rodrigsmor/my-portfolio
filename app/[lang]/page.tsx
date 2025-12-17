@@ -1,7 +1,7 @@
 // You now have access to the current locale
 
 import { Metadata } from "next";
-import Portfolio from "@/views/portfolio.ts"
+import Portfolio from "@/views/portfolio"
 import { LanguageCode } from "@/utils/@types/lang";
 import { getDictionary } from "../../utils/functions/dictionaries";
 
