@@ -54,7 +54,7 @@
 
   .header > :global(.outline-select),
   .header > :global(.navbar) {
-    display: flex; 
+    display: flex;
   }
 
   .header > :global(.icon-button) {
