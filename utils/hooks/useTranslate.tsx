@@ -22,6 +22,7 @@ interface LanguageContextType {
   locale: LanguageCode;
   dictionary: Dictionary;
   t: (path: PathToDot<Dictionary>) => string;
+  getObject: (path: PathToDot<Dictionary>) => unknown;
   setLocale: (newLocale: LanguageCode) => void;
   isPending: boolean;
 }
@@ -41,7 +42,7 @@ export function LanguageProvider({
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
 
-  const t = (path: string): string => {
+  const t = (path: PathToDot<Dictionary>): string => {
     const value = path.split('.').reduce((acc: unknown, key: string) => {
       if (acc && typeof acc === 'object' && key in acc) {
         return (acc as Record<string, unknown>)[key];
@@ -51,6 +52,17 @@ export function LanguageProvider({
 
     return typeof value === 'string' ? value : path;
   };
+
+  function getObject<T>(path: PathToDot<Dictionary>): T | undefined {
+    const value = path.split('.').reduce((acc: unknown, key: string) => {
+      if (acc && typeof acc === 'object' && key in acc) {
+        return (acc as Record<string, unknown>)[key];
+      }
+      return undefined;
+    }, dictionary);
+
+    return value as T;
+  }
 
   const setLocale = (newLocale: LanguageCode) => {
     Cookies.set('NEXT_LOCALE', newLocale, { expires: 365 });
@@ -64,7 +76,7 @@ export function LanguageProvider({
   };
 
   return (
-    <LanguageContext.Provider value={{ locale: initialLocale, dictionary, t, setLocale, isPending }}>
+    <LanguageContext.Provider value={{ locale: initialLocale, getObject, dictionary, t, setLocale, isPending }}>
       {children}
     </LanguageContext.Provider>
   );
