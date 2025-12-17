@@ -20,6 +20,22 @@
     "Description": "¡Estoy entusiasmado por desarrollar soluciones innovadoras y sólidas a tu lado! Explora mis trabajos y descubre cómo puedo potenciar tu proyecto.",
     "PrimaryButton": "¡Trabajemos juntos!",
     "SecondaryButton": "Checa mis proyectos",
-    "scrollDown": "Sigue bajando"
+    "scrollDown": "Sigue bajando",
+    "Carousel": {
+      "sectionLabel": "Resumen de Habilidades",
+      "Group": {
+        "web": "Desarrollo Web",
+        "uiux": "Diseño UI/UX",
+        "devops": "DevOps",
+        "api": "Diseño e Integración de APIs",
+        "architecture": "Arquitectura de Software",
+        "cloud": "Computación en la Nube",
+        "cicd": "CI/CD",
+        "database": "Gestión de Bases de Datos",
+        "mobile": "Desarollo Mobile",
+        "agile": "Metodologías Ágiles",
+        "ai": "Inteligencia Artificial"
+      }
+    }
   }
 }

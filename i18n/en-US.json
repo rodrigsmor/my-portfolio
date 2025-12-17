@@ -20,6 +20,22 @@
     "Description": "I look forward to creating innovative and reliable solutions with you. Explore my portfolio and discover how I can bring value to your project.",
     "PrimaryButton": "Let’s Work Together!",
     "SecondaryButton": "View My Projects",
-    "scrollDown": "Scroll Down"
+    "scrollDown": "Scroll Down",
+    "Carousel": {
+      "sectionLabel": "Abilities Overview",
+      "Group": {
+        "web": "Web Development",
+        "uiux": "UI/UX Design",
+        "devops": "DevOps",
+        "api": "API Design & Integration",
+        "architecture": "Software Architecture",
+        "cloud": "Cloud Computing",
+        "cicd": "CI/CD",
+        "database": "Database Management",
+        "mobile": "Mobile Development",
+        "agile": "Agile Methodologies",
+        "ai": "Artificial Intelligence"
+      }
+    }
   }
 }
