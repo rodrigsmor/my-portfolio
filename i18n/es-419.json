@@ -44,6 +44,36 @@
       "prefix": "¡Buenas! ¿Todo bien?",
       "label": "Mi nombre es"
     },
-    "Greetings": "¡Es un placer tenerte aquí!"
+    "Greetings": "¡Es un placer tenerte aquí!",
+    "introductionText": "Con más de cuatro años de experiencia en aplicaciones web y móviles, he trabajado en proyectos SaaS, soluciones impulsadas por IA y plataformas en diversos sectores, incluidos los mercados inmobiliario y financiero de EE. UU. Mi trabajo combina habilidades de diseño profesional con experiencia en desarrollo de software, centrándose siempre en la usabilidad, accesibilidad, rendimiento y seguridad.",
+    "conclusiveText": "Como profesional, estoy comprometido con el crecimiento constante. Actualmente estoy ampliando mis conocimientos en escalabilidad, estructuras de datos, rendimiento y seguridad de la información, buscando entregar soluciones cada vez más robustas y de primer nivel. Mi camino se define por el aprendizaje continuo y la pasión por transformar ideas en software que genere un impacto real en las empresas y en las personas.",
+    "Achievements": {
+      "title": "Mis Logros",
+      "Items": {
+        "yearsOfExperience": {
+          "title": "4+ Años de Experiencia",
+          "description": "Sólida trayectoria en desarrollo de software, entregando soluciones de excelencia;"
+        },
+        "solutionsDelivered": {
+          "title": "8+ Aplicaciones Entregadas",
+          "description": "Experiencia comprobada en el diseño, construcción y lanzamiento de productos digitales exitosos;"
+        },
+        "performanceOptimization": {
+          "title": "Optimización de Rendimiento",
+          "description": "Logré tiempos de carga hasta un 98% más rápidos en aplicaciones con gran volumen de datos."
+        },
+        "aiIntegration": {
+          "title": "Integración de IA",
+          "description": "Creación de aplicaciones potenciadas por machine learning e IA generativa."
+        },
+        "creativity": {
+          "title": "Creatividad y Diseño",
+          "description": "Soluciones centradas en el usuario para diversos sectores, desde apps de delivery hasta CRMs."
+        }
+      }
+    },
+    "downloadButton": "Descargar Currículo",
+    "closingParagraph": "Párrafo de conclusión",
+    "altText": "Fotografía en blanco y negro de Rodrigo Moreira, desarrollador de software Full Stack brasileño, mirando ligeramente hacia un lado con una expresión serena, sobre un fondo desenfocado. Joven afrobrasileño de piel morena clara, con labios ligeramente carnosos y una nariz de base más ancha, con la punta suavemente achatada. Su cabello es rizado, con una textura cercana al crespo, en un largo equilibrado.\n\nLa ausencia de color transmite una estética sobria y profesional, que refleja enfoque, madurez y apertura a nuevas oportunidades. Rodrigo Moreira es un desarrollador de software Full Stack con base en Brasil, preparado para participar en nuevos proyectos y aportar valor mediante sus conocimientos en desarrollo de software, buenas prácticas y soluciones escalables."
   }
 }

@@ -44,6 +44,36 @@
       "prefix": "Hello There!",
       "label": "I'm"
     },
-    "Greetings": "Welcome To My Portfolio!"
+    "Greetings": "Welcome To My Portfolio!",
+    "introductionText": "With over four years of experience in web and mobile applications, I have worked on SaaS projects, AI-powered solutions, and platforms across diverse industries, including the U.S. real estate and financial markets. My work combines professional design skills with software development expertise, always focusing on usability, accessibility, performance, and security.",
+    "conclusiveText": "As a professional, I’m committed to continuous growth. I’m currently expanding my expertise in scalability, data structures, performance, and information security, aiming to deliver increasingly robust, high-level solutions. My path is defined by continuous learning and a passion for turning ideas into software that makes a real impact on businesses and people.",
+    "Achievements": {
+      "title": "Achievements",
+      "Items": {
+        "yearsOfExperience": {
+          "title": "4+ Years of Experience",
+          "description": "Solid background in software development, delivering outstanding solutions;"
+        },
+        "solutionsDelivered": {
+          "title": "8+ Applications Delivered",
+          "description": "Proven expertise in designing, building, and launching successful digital products;"
+        },
+        "performanceOptimization": {
+          "title": "Performance Optimization",
+          "description": "Achieved up to 98% faster load times in data-heavy applications."
+        },
+        "aiIntegration": {
+          "title": "AI Integration",
+          "description": "Built applications powered by machine learning & generative AI."
+        },
+        "creativity": {
+          "title": "Creativity & Design",
+          "description": "Crafted user-focused solutions across diverse industries, from delivery apps to CRMs."
+        }
+      }
+    },
+    "downloadButton": "Download Resume",
+    "closingParagraph": "Closing paragraph",
+    "altText": "Black-and-white photograph of Rodrigo Moreira, a Brazilian Full Stack Software Developer, looking slightly to the side with a calm expression, set against a blurred background. A young Afro-Brazilian man with medium brown skin, slightly full lips, and a wider nose base with a gently flattened tip. His hair is curly, leaning toward a coily texture, styled at a balanced length.\n\nThe monochrome image conveys a professional and understated aesthetic, expressing focus, maturity, and openness to new opportunities. Rodrigo Moreira is a Full Stack Software Developer based in Brazil, prepared to work on new projects and add value through strong software development skills, industry best practices, and scalable solutions."
   }
 }
