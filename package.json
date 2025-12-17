@@ -9,6 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.7.1",
+    "js-cookie": "^3.0.5",
+    "negotiator": "^1.0.0",
     "next": "16.0.10",
     "phosphor-react": "^1.4.1",
     "react": "19.2.1",
@@ -17,6 +20,8 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/js-cookie": "^3.0.6",
+    "@types/negotiator": "^0.6.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
