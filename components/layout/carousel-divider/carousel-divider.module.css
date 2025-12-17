@@ -1,5 +1,4 @@
 .carouselContainer {
-  /* gap: 1.75rem; */
   width: 100dvw;
   overflow-x: hidden;
   max-width: 100dvw;
@@ -22,7 +21,7 @@
   list-style: none;
   display: flex;
   padding: 0 1.75rem 0 0;
-  animation: autoScroll 12s infinite linear;
+  animation: autoScroll 14s infinite linear;
   flex-direction: row;
 }
 
@@ -49,4 +48,10 @@
 @keyframes autoScroll {
   from { translate: 0; }
   to { translate: -100%; }
+}
+
+@media screen and (min-width: 1024px) {
+  .carouselItem {
+    font-size: var(--font-h3);
+  }
 }
