@@ -1,14 +1,7 @@
-import { Home } from "@/views/home";
-import styles from "./page.module.css";
-import { Header } from "@/components/layout/header";
+import Portfolio from "@/views/portfolio.ts";
 
 export default function Page() {
   return (
-    <div className={styles.pageLayout}>
-      <Header />
-      <main>
-        <Home />
-      </main>
-    </div>
+    <Portfolio />
   );
 }
