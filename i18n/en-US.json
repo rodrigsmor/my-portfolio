@@ -1,0 +1,16 @@
+{
+  "Metadata": {
+    "title": "Rodrigo Moreira | Software Developer's Portfolio",
+    "description": "Freelance Developer & UI/UX designer with 4+ years of experience. I build SaaS platforms, AI Powered apps, and responsive web solutions focunsed on usability, performance and security."
+  },
+  "Home": {
+    "Header": {
+      "home": "Home",
+      "aboutMe": "About Me",
+      "services": "Services",
+      "projects": "Projects",
+      "contacts": "Contacts"
+    },
+    "scrollDown": "Scroll Down"
+  }
+}

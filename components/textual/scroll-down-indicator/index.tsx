@@ -1,5 +1,6 @@
 import { SVGProps } from 'react';
 import styles from './scroll-down-indicator.module.css';
+import { useTranslate } from '@/utils/hooks/useTranslate';
 
 const ScrollDownIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -21,9 +22,10 @@ const ScrollDownIcon = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export function ScrollDownIndicator() {
+  const { t } = useTranslate();
   return (
     <div className={styles.scrollDownIndicator}>
-      <p>Scroll Down</p>
+      <p>{t('Home.scrollDown')}</p>
       <ScrollDownIcon />
     </div>
   );

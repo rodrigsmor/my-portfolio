@@ -1,0 +1,16 @@
+{
+  "Metadata": {
+    "title": "Rodrigo Moreira | Portfólio de Desenvolvedor de Software",
+    "description": "Desenvolvedor Freelance & UI/UX Designer com mais de 4 anos de experiência. Construo plataformas SaaS, aplicativos baseados em IA e soluções web responsivas focadas em usabilidade, performance e segurança."
+  },
+  "Home": {
+    "Header": {
+      "home": "Início",
+      "aboutMe": "Sobre mim",
+      "services": "Serviços",
+      "projects": "Projetos",
+      "contacts": "Contatos"
+    },
+    "scrollDown": "Veja mais"
+  }
+}
