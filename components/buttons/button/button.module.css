@@ -8,7 +8,7 @@
   padding: 0 1.125rem;
   min-width: fit-content;
   justify-content: center;
-  border-radius: 1.125rem;
+  border-radius: 3rem;
   transition: all 0.3s ease-in-out;
   font-size: var(--font-h6);
   border: 0 solid transparent;
@@ -34,7 +34,7 @@
       position: absolute;
       content: "";
       inset: 0;
-      border-radius: 1.125rem;
+      border-radius: 3rem;
       background: var(--gradient-primaryToSecondary-x-dark);
       z-index: -1;
       transition: opacity .3s linear;
