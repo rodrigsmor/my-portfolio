@@ -26,6 +26,7 @@
       "@/functions/*": ["./utils/functions/*"],
       "@/consts/*": ["./utils/consts"],
       "@/components/*": ["./components/*"],
+      "@/sections/*": ["./components/sections/*"]
     }
   },
   "include": [
@@ -35,6 +36,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "views/portfolio"  ],
   "exclude": ["node_modules"]
 }
