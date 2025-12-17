@@ -11,6 +11,15 @@
       "projects": "Proyectos",
       "contacts": "Contacto"
     },
+    "Title": {
+      "greetings": "¡Hola! Soy",
+      "role": "Ingeniero",
+      "highlightRole": "de Software",
+      "secondaryRole": "diseñador UI/UX"
+    },
+    "Description": "¡Estoy entusiasmado por desarrollar soluciones innovadoras y sólidas a tu lado! Explora mis trabajos y descubre cómo puedo potenciar tu proyecto.",
+    "PrimaryButton": "¡Trabajemos juntos!",
+    "SecondaryButton": "Checa mis proyectos",
     "scrollDown": "Sigue bajando"
   }
 }

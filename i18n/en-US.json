@@ -11,6 +11,15 @@
       "projects": "Projects",
       "contacts": "Contacts"
     },
+    "Title": {
+      "greetings": "Hello, I’m a",
+      "role": "Software",
+      "highlightRole": "Developer",
+      "secondaryRole": "UI/UX Designer"
+    },
+    "Description": "I look forward to creating innovative and reliable solutions with you. Explore my portfolio and discover how I can bring value to your project.",
+    "PrimaryButton": "Let’s Work Together!",
+    "SecondaryButton": "View My Projects",
     "scrollDown": "Scroll Down"
   }
 }
