@@ -6,11 +6,20 @@
   inset: 0 0 auto 0;
   padding: 0 1.75rem;
   align-items: center;
+  transition: all .3s ease;
   justify-content: space-between;
 
   > :global(.outline-select),
   > :global(.navbar) {
     display: none; 
+  }
+
+  &.scrolled {
+    /* box-shadow: var(--shadow-primary-main); */
+    backdrop-filter: blur(20px);
+    background: color-mix(in srgb, var(--typography-extralight) 10%, transparent);
+    -webkit-box-shadow: var(--shadow-header); 
+    box-shadow: var(--shadow-header); 
   }
 }
 
@@ -50,5 +59,16 @@
 
   .header > :global(.icon-button) {
     display: none; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    &.scrolled {
+      height: 4.25rem;
+      border-radius: 1.125rem;
+      inset: 1.75rem auto auto;
+      width: calc(100dvw - 3.5rem);
+    }
   }
 }
