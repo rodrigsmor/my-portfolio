@@ -74,6 +74,29 @@
     },
     "downloadButton": "Download Resume",
     "closingParagraph": "Closing paragraph",
-    "altText": "Black-and-white photograph of Rodrigo Moreira, a Brazilian Full Stack Software Developer, looking slightly to the side with a calm expression, set against a blurred background. A young Afro-Brazilian man with medium brown skin, slightly full lips, and a wider nose base with a gently flattened tip. His hair is curly, leaning toward a coily texture, styled at a balanced length.\n\nThe monochrome image conveys a professional and understated aesthetic, expressing focus, maturity, and openness to new opportunities. Rodrigo Moreira is a Full Stack Software Developer based in Brazil, prepared to work on new projects and add value through strong software development skills, industry best practices, and scalable solutions."
+    "altText": "Black-and-white photograph of Rodrigo Moreira, a Brazilian Full Stack Software Developer, looking slightly to the side with a calm expression, set against a blurred background. A young Afro-Brazilian man with medium brown skin, slightly full lips, and a wider nose base with a gently flattened tip. His hair is curly, leaning toward a coily texture, styled at a balanced length.\n\nThe monochrome image conveys a professional and understated aesthetic, expressing focus, maturity, and openness to new opportunities. Rodrigo Moreira is a Full Stack Software Developer based in Brazil, prepared to work on new projects and add value through strong software development skills, industry best practices, and scalable solutions.",
+    "Skills": {
+      "title": "Skills",
+      "content": "As a Full Stack Software Developer, I have hands-on experience across the entire software development lifecycle, from requirements analysis and system design to implementation, deployment, and long-term maintenance. I work confidently on both front-end and back-end layers, ensuring scalable, maintainable, and well-tested solutions.\n\nWith several years of professional experience, I actively contribute to technical decision-making, balancing architectural best practices with pragmatic trade-offs. I am comfortable evaluating technologies, designing APIs, optimizing performance, and addressing complex problems with a focus on reliability and business impact.\n\nI adapt quickly to new tools and frameworks, applying solid engineering principles rather than relying on trends. I value clear communication and collaboration, engaging in technical discussions to align solutions with product goals and deliver measurable results. Below are some of my core areas of expertise.",
+      "Languages": {
+        "title": "Languages",
+        "pt-BR": {
+          "name": "Portuguese",
+          "level": "Native"
+        },
+        "en-US": {
+          "name": "English",
+          "level": "Upper-intermediate (B2)"
+        },
+        "es-419": {
+          "name": "Spanish",
+          "level": "Beginner (A1)"
+        }
+      }
+    }
+  },
+  "ScreenReader": {
+    "languageLevelLabel": "Level: ",
+    "ProficiencyLevel": "Proficiency on "
   }
 }

@@ -74,6 +74,29 @@
     },
     "downloadButton": "Descargar Currículo",
     "closingParagraph": "Párrafo de conclusión",
-    "altText": "Fotografía en blanco y negro de Rodrigo Moreira, desarrollador de software Full Stack brasileño, mirando ligeramente hacia un lado con una expresión serena, sobre un fondo desenfocado. Joven afrobrasileño de piel morena clara, con labios ligeramente carnosos y una nariz de base más ancha, con la punta suavemente achatada. Su cabello es rizado, con una textura cercana al crespo, en un largo equilibrado.\n\nLa ausencia de color transmite una estética sobria y profesional, que refleja enfoque, madurez y apertura a nuevas oportunidades. Rodrigo Moreira es un desarrollador de software Full Stack con base en Brasil, preparado para participar en nuevos proyectos y aportar valor mediante sus conocimientos en desarrollo de software, buenas prácticas y soluciones escalables."
+    "altText": "Fotografía en blanco y negro de Rodrigo Moreira, desarrollador de software Full Stack brasileño, mirando ligeramente hacia un lado con una expresión serena, sobre un fondo desenfocado. Joven afrobrasileño de piel morena clara, con labios ligeramente carnosos y una nariz de base más ancha, con la punta suavemente achatada. Su cabello es rizado, con una textura cercana al crespo, en un largo equilibrado.\n\nLa ausencia de color transmite una estética sobria y profesional, que refleja enfoque, madurez y apertura a nuevas oportunidades. Rodrigo Moreira es un desarrollador de software Full Stack con base en Brasil, preparado para participar en nuevos proyectos y aportar valor mediante sus conocimientos en desarrollo de software, buenas prácticas y soluciones escalables.",
+    "Skills": {
+      "title": "Habilidades",
+      "content": "Como Desarrollador de Software Full Stack, cuento con experiencia práctica en todas las etapas del ciclo de desarrollo de software, desde el análisis de requisitos y el diseño de sistemas hasta la implementación, el despliegue y el mantenimiento a largo plazo. Trabajo con seguridad tanto en el front-end como en el back-end, garantizando soluciones escalables, mantenibles y bien probadas.\n\nCon varios años de experiencia profesional, participo activamente en la toma de decisiones técnicas, equilibrando las buenas prácticas de arquitectura con enfoques pragmáticos. Me siento cómodo evaluando tecnologías, diseñando APIs, optimizando el rendimiento y resolviendo problemas complejos, siempre con foco en la confiabilidad, el impacto en el negocio y la calidad del software.\n\nMe adapto rápidamente a nuevas herramientas y frameworks, aplicando principios sólidos de ingeniería de software en lugar de seguir tendencias pasajeras. Valoro la comunicación clara y el trabajo colaborativo, participando en discusiones técnicas para alinear las soluciones con los objetivos del producto y entregar resultados medibles. A continuación, presento algunas de mis principales áreas de especialización.",
+      "Languages": {
+        "title": "Idiomas",
+        "pt-BR": {
+          "name": "Portugués",
+          "level": "Nativo"
+        },
+        "en-US": {
+          "name": "Inglés",
+          "level": "Intermedio alto (B2)"
+        },
+        "es-419": {
+          "name": "Español",
+          "level": "Principiante (A1)"
+        }
+      }
+    }
+  },
+  "ScreenReader": {
+    "languageLevelLabel": "Nível: ",
+    "ProficiencyLevel": "Competencia en "
   }
 }

@@ -74,6 +74,29 @@
     },
     "downloadButton": "Baixar Currículo",
     "closingParagraph": "Parágrafo final",
-    "altText": "Fotografia em preto e branco de Rodrigo Moreira, olhando levemente para o lado, com um semblante sereno, sobre um fundo desfocado. Jovem afro-brasileiro de pele parda, com lábios levemente carnudos e nariz de base mais larga, com a ponta suavemente achatada. Seus cabelos são cacheados, com textura próxima ao crespo, em um comprimento equilibrado, nem muito alto nem muito baixo.\n\nA ausência de cores reforça uma estética sóbria e profissional, transmitindo foco, maturidade e abertura a novas oportunidades. Rodrigo Moreira é um desenvolvedor de software Full Stack, preparado para atuar em novos projetos e agregar valor por meio de seus conhecimentos em desenvolvimento de software, boas práticas e soluções escaláveis."
+    "altText": "Fotografia em preto e branco de Rodrigo Moreira, olhando levemente para o lado, com um semblante sereno, sobre um fundo desfocado. Jovem afro-brasileiro de pele parda, com lábios levemente carnudos e nariz de base mais larga, com a ponta suavemente achatada. Seus cabelos são cacheados, com textura próxima ao crespo, em um comprimento equilibrado, nem muito alto nem muito baixo.\n\nA ausência de cores reforça uma estética sóbria e profissional, transmitindo foco, maturidade e abertura a novas oportunidades. Rodrigo Moreira é um desenvolvedor de software Full Stack, preparado para atuar em novos projetos e agregar valor por meio de seus conhecimentos em desenvolvimento de software, boas práticas e soluções escaláveis.",
+    "Skills": {
+      "title": "Habilidades",
+      "content": "Como Desenvolvedor de Software Full Stack, possuo experiência prática em todas as etapas do ciclo de desenvolvimento de software, desde a análise de requisitos e o design de sistemas até a implementação, o deploy e a manutenção de longo prazo. Atuo com segurança tanto no front-end quanto no back-end, garantindo soluções escaláveis, sustentáveis e bem testadas.\n\nCom vários anos de experiência profissional, contribuo ativamente para a tomada de decisões técnicas, equilibrando boas práticas de arquitetura com escolhas pragmáticas. Tenho facilidade em avaliar tecnologias, projetar APIs, otimizar desempenho e resolver problemas complexos, sempre com foco em confiabilidade, impacto no negócio e qualidade do software.\n\nAdapto-me rapidamente a novas ferramentas e frameworks, aplicando princípios sólidos de engenharia de software em vez de seguir tendências passageiras. Valorizo a comunicação clara e o trabalho colaborativo, participando de discussões técnicas para alinhar soluções aos objetivos do produto e entregar resultados mensuráveis. A seguir, apresento algumas das minhas principais áreas de especialidade.",
+      "Languages": {
+        "title": "Idiomas",
+        "pt-BR": {
+          "name": "Português",
+          "level": "Nativo"
+        },
+        "en-US": {
+          "name": "Inglés",
+          "level": "Intermedio alto (B2)"
+        },
+        "es-419": {
+          "name": "Español",
+          "level": "Principiante (A1)"
+        }
+      }
+    }
+  },
+  "ScreenReader": {
+    "languageLevelLabel": "Nível: ",
+    "ProficiencyLevel": "Proficiência em "
   }
 }
