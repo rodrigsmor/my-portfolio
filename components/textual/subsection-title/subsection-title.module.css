@@ -1,0 +1,44 @@
+.subsectionTitle {
+  width: 100%;
+  display: flex;
+  /* overflow: hidden; */
+  align-items: center;
+  justify-content: center;
+
+  h4 {
+    width: 100%;
+    gap: .875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-h3);
+    font-weight: var(--font-semibold);
+    color: var(--typography-main);
+
+    &::before,
+    &::after {
+      width: 100%;
+      content: '';
+      height: .125rem;
+      display: inline-block;
+      background: var(--gradient-typographyToOpacity-x);
+    }
+
+    &::before {
+      transform: scaleX(-1);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .subsectionTitle {
+    h4 {
+      width: max-content;
+
+      &::before,
+      &::after {
+        width: 8rem;
+      }
+    }
+  }
+}

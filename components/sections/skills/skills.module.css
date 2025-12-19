@@ -1,0 +1,121 @@
+.skillsContainer {
+  width: 100%;
+  gap: 4.25rem;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contentWrapper {
+  width: 100%;
+  gap: 4.25rem;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  flex-direction: column;
+}
+
+.abilitiesOverview {
+  gap: 2.375rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    width: 100%;
+    text-wrap: wrap;
+    text-align: start;
+    white-space: pre-wrap;
+    font-size: var(--font-h7);
+    color: var(--typography-main);
+    font-weight: var(--font-regular);
+  }
+}
+
+.languagesSection {
+  width: 100%;
+  display: flex;
+  gap: 1.125rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  :global(.languages-title) {
+    display: flex;
+    gap: .625rem;
+    align-items: center;
+    letter-spacing: .24em;
+    position: relative;
+    font-size: var(--font-h7);
+    text-transform: uppercase;
+    font-weight: var(--font-semibold);
+
+    &::before {
+      content: '';
+      height: 0.25rem;
+      width: 1.75rem;
+      min-height: 0.25rem;
+      min-width: 1.75rem;
+      display: inline-block;
+      pointer-events: none;
+      border-radius: .25rem;
+      box-shadow: var(--shadow-primary-main);
+      background: var(--gradient-primaryToSecondary-x-main);
+    }
+  }
+}
+
+.listOfLanguages {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+
+  li {
+    flex: 1 1 0;
+    width: 100%;
+    max-width: 100%;
+    list-style: none;
+  }
+}
+
+.listOfSkills {
+  height: 200dvh;
+  background-color: violet;
+}
+
+@media (min-width: 1024px) {
+  .contentWrapper {
+    display: grid;
+    gap: 3rem;
+    border: 5px solid red;
+    align-items: start;
+    overflow: visible;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .abilitiesOverview {
+    top: 7.125rem;
+    position: sticky;
+    height: auto;
+    align-self: baseline;
+    position: -webkit-sticky;
+    outline: 5px solid yellow;
+  }
+
+  .languagesSection {
+    padding: 0 0 0 .875rem;
+    align-items: flex-start;
+  }
+
+  .listOfLanguages {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+  }
+}
