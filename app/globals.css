@@ -58,7 +58,7 @@
   --gradient-primaryToSecondary-y-main: linear-gradient(180deg, #6805E0 0%, #ED2BC6 100%);
   --gradient-primaryToSecondary-x-dark: linear-gradient(90deg, #450396 0%, #BC109A 100%);
   --gradient-metalic-style: linear-gradient(90deg, #0C0816 0%, #231A3C 50%, #0C0816 100%);
-
+  --gradient-typographyToOpacity-x: linear-gradient(90deg, #F0ECF8 0%, rgba(240, 236, 248, 0) 100%);
   /* media sizes */
   /* --media-mobile: 320px;
   --media-tablet: 768px;
