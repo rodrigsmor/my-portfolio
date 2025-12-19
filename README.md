@@ -49,6 +49,9 @@ Welcome to my portfolio! I’m a full-stack software developer who uses programm
 
 ## 📚 Table of contents
 
+- [Getting Started](#getting-started)
+- [Learn More](#learn-more)
+- [Deploy on Vercel](#deploy-on-vercel)
 - [👋🏽 Introduction](#-introduction)
 - [📚 Table of contents](#-table-of-contents)
 - [👨🏽‍💻 About me](#-about-me)
